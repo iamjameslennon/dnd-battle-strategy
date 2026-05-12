@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">
+  <style>
+    .title { font: bold 16px Arial, sans-serif; fill: white; }
+    .subtitle { font: 10px Arial, sans-serif; fill: #b0b0d0; }
+    .node-text { font: bold 10px Arial, sans-serif; fill: white; }
+    .decision { font: bold 9px Arial, sans-serif; fill: #1a1a2e; }
+    .yes-label { font: bold 8px Arial, sans-serif; fill: #28a745; }
+    .no-label { font: bold 8px Arial, sans-serif; fill: #dc3545; }
+    .action-title { font: bold 9px Arial, sans-serif; fill: white; }
+    .action-detail { font: 7px Arial, sans-serif; fill: white; }
+    .stat-label { font: bold 8px Arial, sans-serif; fill: #1a1a2e; }
+    .stat-value { font: 8px Arial, sans-serif; fill: #4a4a6a; }
+    .section-title { font: bold 9px Arial, sans-serif; fill: #1a1a2e; }
+    .box-title { font: bold 9px Arial, sans-serif; fill: white; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="595" height="842" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect x="15" y="10" width="565" height="45" rx="6" fill="#1a1a2e"/>
+  <text x="297" y="30" text-anchor="middle" class="title">IDHREN - BATTLE STRATEGY</text>
+  <text x="297" y="44" text-anchor="middle" class="subtitle">Level 1 Elf Barbarian | HP: 13 | AC: 14 | Initiative: +5 | Speed: 30ft</text>
+  
+  <!-- Reference Boxes Row -->
+  <!-- Quick Reference -->
+  <rect x="15" y="62" width="180" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="15" y="62" width="180" height="16" rx="4" fill="#495057"/>
+  <text x="105" y="73" text-anchor="middle" class="box-title">QUICK REFERENCE</text>
+  <text x="22" y="90" class="stat-label">Greataxe:</text><text x="90" y="90" class="stat-value">+4, 1d12+2, Cleave</text>
+  <text x="22" y="102" class="stat-label">Handaxe:</text><text x="90" y="102" class="stat-value">+4, 1d6+2, Vex</text>
+  <text x="22" y="114" class="stat-label">Rage:</text><text x="90" y="114" class="stat-value">2/LR, +2 dmg, resist</text>
+  <text x="22" y="126" class="stat-label">Darkvision:</text><text x="90" y="126" class="stat-value">60ft</text>
+  
+  <!-- Rage Info -->
+  <rect x="205" y="62" width="180" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="205" y="62" width="180" height="16" rx="4" fill="#dc3545"/>
+  <text x="295" y="73" text-anchor="middle" class="box-title">🔥 RAGE BENEFITS</text>
+  <text x="212" y="90" class="stat-value">• +2 melee damage (STR)</text>
+  <text x="212" y="102" class="stat-value">• Resist bludg/pierce/slash</text>
+  <text x="212" y="114" class="stat-value">• Adv. on STR checks/saves</text>
+  <text x="212" y="126" class="stat-value">• Ends if no attack/damage</text>
+  
+  <!-- Weapon Mastery -->
+  <rect x="395" y="62" width="185" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="395" y="62" width="185" height="16" rx="4" fill="#6f42c1"/>
+  <text x="487" y="73" text-anchor="middle" class="box-title">WEAPON MASTERY</text>
+  <text x="402" y="90" class="stat-label">Cleave</text><text x="490" y="90" class="stat-value">Hit 2nd enemy in 5ft</text>
+  <text x="402" y="102" class="stat-value">(Greataxe dmg, no STR mod)</text>
+  <text x="402" y="114" class="stat-label">Vex</text><text x="490" y="114" class="stat-value">Adv. on next attack</text>
+  <text x="402" y="126" class="stat-value">(vs same target, before next turn)</text>
+
+  <!-- ============ MAIN FLOWCHART ============ -->
+  
+  <!-- START NODE -->
+  <ellipse cx="297" cy="160" rx="45" ry="16" fill="#2d6a4f"/>
+  <text x="297" y="164" text-anchor="middle" class="node-text">YOUR TURN</text>
+  
+  <!-- Arrow down -->
+  <line x1="297" y1="176" x2="297" y2="195" stroke="#333" stroke-width="1.5"/>
+  <polygon points="297,200 293,192 301,192" fill="#333"/>
+  
+  <!-- Decision 1: Are you raging? -->
+  <polygon points="297,200 380,235 297,270 214,235" fill="#f8d7da" stroke="#dc3545" stroke-width="1.5"/>
+  <text x="297" y="232" text-anchor="middle" class="decision">Are you</text>
+  <text x="297" y="243" text-anchor="middle" class="decision">RAGING?</text>
+  
+  <!-- ===== LEFT BRANCH (NO - Not Raging) ===== -->
+  <line x1="214" y1="235" x2="140" y2="235" stroke="#dc3545" stroke-width="1.5"/>
+  <line x1="140" y1="235" x2="140" y2="270" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="140,275 136,267 144,267" fill="#dc3545"/>
+  <text x="175" y="228" class="no-label" fill="#dc3545">NO</text>
+  
+  <!-- Decision: Expect combat to last? -->
+  <polygon points="140,275 200,300 140,325 80,300" fill="#fff3cd" stroke="#856404" stroke-width="1"/>
+  <text x="140" y="297" text-anchor="middle" class="decision">Combat will</text>
+  <text x="140" y="308" text-anchor="middle" class="decision">last 2+ rounds?</text>
+  
+  <!-- YES - Enter Rage -->
+  <line x1="80" y1="300" x2="50" y2="300" stroke="#dc3545" stroke-width="1.5"/>
+  <line x1="50" y1="300" x2="50" y2="330" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="50,335 46,327 54,327" fill="#dc3545"/>
+  <text x="63" y="293" class="yes-label">YES</text>
+  
+  <rect x="20" y="335" width="60" height="40" rx="4" fill="#dc3545"/>
+  <text x="50" y="350" text-anchor="middle" class="action-title">RAGE</text>
+  <text x="50" y="361" text-anchor="middle" class="action-detail">Bonus Action</text>
+  <text x="50" y="371" text-anchor="middle" class="action-detail">Then Attack</text>
+  
+  <!-- Line from RAGE to 2+ enemies -->
+  <line x1="50" y1="375" x2="50" y2="400" stroke="#dc3545" stroke-width="1.5"/>
+  <line x1="50" y1="400" x2="297" y2="400" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="297,400 289,396 289,404" fill="#dc3545"/>
+  
+  <!-- NO - Skip Rage, go to combat -->
+  <line x1="140" y1="325" x2="140" y2="385" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="140" y1="385" x2="297" y2="385" stroke="#28a745" stroke-width="1.5"/>
+  <text x="150" y="340" class="no-label">NO</text>
+  
+  <!-- ===== RIGHT BRANCH (YES - Already Raging) ===== -->
+  <line x1="380" y1="235" x2="450" y2="235" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="450" y1="235" x2="450" y2="385" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="450" y1="385" x2="297" y2="385" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="297" y1="385" x2="297" y2="395" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="297,400 293,392 301,392" fill="#28a745"/>
+  <text x="405" y="228" class="yes-label">YES</text>
+
+  <!-- Main Combat Decision: Multiple enemies in melee? -->
+  <polygon points="297,400 370,430 297,460 224,430" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="297" y="423" text-anchor="middle" class="decision">2+ enemies</text>
+  <text x="297" y="434" text-anchor="middle" class="decision">within 5ft?</text>
+  
+  <!-- YES - Multiple enemies - GREATAXE + CLEAVE -->
+  <line x1="224" y1="430" x2="160" y2="430" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="160" y1="430" x2="160" y2="440" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="160,445 156,437 164,437" fill="#28a745"/>
+  <text x="190" y="423" class="yes-label">YES</text>
+  
+  <rect x="115" y="445" width="90" height="60" rx="4" fill="#28a745"/>
+  <text x="160" y="460" text-anchor="middle" class="action-title">GREATAXE</text>
+  <text x="160" y="470" text-anchor="middle" class="action-title">+ CLEAVE</text>
+  <text x="160" y="481" text-anchor="middle" class="action-detail">Melee Weapon</text>
+  <text x="160" y="490" text-anchor="middle" class="action-detail">+4 to hit</text>
+  <text x="160" y="499" text-anchor="middle" class="action-detail">1d12+4 slash | 5ft</text>
+  
+  <!-- NO - Single/No enemies in melee -->
+  <line x1="297" y1="460" x2="297" y2="475" stroke="#fd7e14" stroke-width="1.5"/>
+  <polygon points="297,480 293,472 301,472" fill="#fd7e14"/>
+  <text x="307" y="470" class="no-label">NO</text>
+  
+  <!-- Decision: Enemy in melee range? -->
+  <polygon points="297,480 370,510 297,540 224,510" fill="#fff3cd" stroke="#856404" stroke-width="1"/>
+  <text x="297" y="507" text-anchor="middle" class="decision">Enemy in</text>
+  <text x="297" y="518" text-anchor="middle" class="decision">melee (5ft)?</text>
+  
+  <!-- YES - Single enemy melee - choose weapon -->
+  <line x1="224" y1="510" x2="200" y2="510" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="200" y1="510" x2="200" y2="550" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="200,555 196,547 204,547" fill="#28a745"/>
+  <text x="210" y="528" class="yes-label">YES</text>
+  
+  <!-- Decision: Need advantage on next attack? -->
+  <polygon points="200,555 265,582 200,609 135,582" fill="#e2d4f0" stroke="#6f42c1" stroke-width="1"/>
+  <text x="200" y="575" text-anchor="middle" class="decision">Want Adv.</text>
+  <text x="200" y="586" text-anchor="middle" class="decision">next attack?</text>
+  
+  <!-- YES - Handaxe for Vex -->
+  <line x1="135" y1="582" x2="100" y2="582" stroke="#6f42c1" stroke-width="1.5"/>
+  <line x1="100" y1="582" x2="100" y2="625" stroke="#6f42c1" stroke-width="1.5"/>
+  <polygon points="100,630 96,622 104,622" fill="#6f42c1"/>
+  <text x="115" y="595" class="yes-label" fill="#6f42c1">YES</text>
+  
+  <rect x="60" y="630" width="80" height="60" rx="4" fill="#6f42c1"/>
+  <text x="100" y="645" text-anchor="middle" class="action-title">HANDAXE</text>
+  <text x="100" y="655" text-anchor="middle" class="action-title">(VEX)</text>
+  <text x="100" y="666" text-anchor="middle" class="action-detail">Melee Weapon</text>
+  <text x="100" y="675" text-anchor="middle" class="action-detail">+4 to hit</text>
+  <text x="100" y="684" text-anchor="middle" class="action-detail">1d6+4 slash | 5ft</text>
+  
+  <!-- NO - Max damage - Greataxe -->
+  <line x1="200" y1="609" x2="200" y2="625" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="200,630 196,622 204,622" fill="#28a745"/>
+  <text x="210" y="620" class="no-label">NO</text>
+  
+  <rect x="160" y="630" width="80" height="60" rx="4" fill="#28a745"/>
+  <text x="200" y="645" text-anchor="middle" class="action-title">GREATAXE</text>
+  <text x="200" y="656" text-anchor="middle" class="action-detail">Melee Weapon</text>
+  <text x="200" y="665" text-anchor="middle" class="action-detail">+4 to hit</text>
+  <text x="200" y="674" text-anchor="middle" class="action-detail">1d12+4 slash | 5ft</text>
+  
+  <!-- NO - Enemy not in melee - ranged or move -->
+  <line x1="370" y1="510" x2="410" y2="510" stroke="#dc3545" stroke-width="1.5"/>
+  <line x1="410" y1="510" x2="410" y2="550" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="410,555 406,547 414,547" fill="#dc3545"/>
+  <text x="390" y="523" class="no-label">NO</text>
+  
+  <!-- Decision: Can reach enemy this turn? -->
+  <polygon points="410,555 480,582 410,609 340,582" fill="#fff3cd" stroke="#856404" stroke-width="1"/>
+  <text x="410" y="575" text-anchor="middle" class="decision">Can reach</text>
+  <text x="410" y="586" text-anchor="middle" class="decision">in 30ft?</text>
+  
+  <!-- YES - Dash and attack or just move -->
+  <line x1="340" y1="582" x2="310" y2="582" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="310" y1="582" x2="310" y2="625" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="310,630 306,622 314,622" fill="#28a745"/>
+  <text x="323" y="595" class="yes-label">YES</text>
+  
+  <rect x="265" y="630" width="90" height="60" rx="4" fill="#17a2b8"/>
+  <text x="310" y="645" text-anchor="middle" class="action-title">MOVE + ATTACK</text>
+  <text x="310" y="656" text-anchor="middle" class="action-detail">Close distance</text>
+  <text x="310" y="667" text-anchor="middle" class="action-detail">Then Greataxe</text>
+  <text x="310" y="678" text-anchor="middle" class="action-detail">or Handaxe</text>
+
+
+  <line x1="280" y1="582" x2="280" y2="630" stroke="#17a2b8" stroke-width="1.5"/>
+  <line x1="280" y1="582" x2="265" y2="582" stroke="#17a2b8" stroke-width="1.5"/>
+  <polygon points="265,582 273,578 273,586" fill="#17a2b8"/>
+
+  <!-- NO - Throw Handaxe -->
+  <line x1="410" y1="609" x2="410" y2="625" stroke="#fd7e14" stroke-width="1.5"/>
+  <polygon points="410,630 406,622 414,622" fill="#fd7e14"/>
+  <text x="420" y="620" class="no-label">NO</text>
+  
+  <rect x="365" y="630" width="90" height="60" rx="4" fill="#fd7e14"/>
+  <text x="410" y="645" text-anchor="middle" class="action-title">THROW</text>
+  <text x="410" y="655" text-anchor="middle" class="action-title">HANDAXE</text>
+  <text x="410" y="666" text-anchor="middle" class="action-detail">Ranged Weapon</text>
+  <text x="410" y="675" text-anchor="middle" class="action-detail">+4 | 1d6+4 | 20/60ft</text>
+
+  <!-- ============ BOTTOM BOXES ============ -->
+  
+  <!-- Reaction Box -->
+  <rect x="15" y="700" width="135" height="55" rx="4" fill="#343a40"/>
+  <text x="82" y="715" text-anchor="middle" class="box-title">⚡ REACTION</text>
+  <line x1="25" y1="722" x2="140" y2="722" stroke="#555" stroke-width="1"/>
+  <text x="82" y="737" text-anchor="middle" class="action-detail" style="font-size:8px">Opportunity Attack</text>
+  <text x="82" y="749" text-anchor="middle" class="action-detail" style="font-size:8px">when enemy leaves reach</text>
+  
+  <!-- Bonus Action Box -->
+  <rect x="160" y="700" width="135" height="55" rx="4" fill="#dc3545"/>
+  <text x="227" y="715" text-anchor="middle" class="box-title">⚡ BONUS ACTION</text>
+  <line x1="170" y1="722" x2="285" y2="722" stroke="#b02a37" stroke-width="1"/>
+  <text x="227" y="737" text-anchor="middle" class="node-text">ENTER RAGE</text>
+  <text x="227" y="749" text-anchor="middle" class="action-detail" style="font-size:8px">2 uses per Long Rest</text>
+  
+  <!-- Movement Box -->
+  <rect x="305" y="700" width="135" height="55" rx="4" fill="#17a2b8"/>
+  <text x="372" y="715" text-anchor="middle" class="box-title">📍 MOVEMENT</text>
+  <line x1="315" y1="722" x2="430" y2="722" stroke="#138496" stroke-width="1"/>
+  <text x="372" y="737" text-anchor="middle" class="action-detail" style="font-size:8px">Speed: 30ft</text>
+  <text x="372" y="749" text-anchor="middle" class="action-detail" style="font-size:8px">Get into melee range!</text>
+  
+  <!-- Defenses Box -->
+  <rect x="450" y="700" width="130" height="55" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="450" y="700" width="130" height="16" rx="4" fill="#20c997"/>
+  <text x="515" y="711" text-anchor="middle" class="box-title">DEFENSES</text>
+  <text x="458" y="727" class="stat-label" style="font-size:7px">Immune:</text><text x="520" y="727" class="stat-value" style="font-size:7px">Magical Sleep</text>
+  <text x="458" y="739" class="stat-label" style="font-size:7px">Adv. Save:</text><text x="520" y="739" class="stat-value" style="font-size:7px">vs Charmed</text>
+  <text x="458" y="751" class="stat-label" style="font-size:7px">Rage:</text><text x="520" y="751" class="stat-value" style="font-size:7px">Resist B/P/S</text>
+
+  <!-- Footer Reminder -->
+  <rect x="15" y="763" width="565" height="35" rx="4" fill="#fff3cd" stroke="#856404" stroke-width="1"/>
+  <text x="297" y="778" text-anchor="middle" class="stat-label" style="font-size:10px">⚔ REMEMBER: RAGE adds +2 damage to melee attacks and gives resistance to physical damage!</text>
+  <text x="297" y="791" text-anchor="middle" class="stat-value" style="font-size:8px">Alert Feat: +2 Initiative (included) | Can swap initiative with willing ally | Darkvision 60ft</text>
+</svg>

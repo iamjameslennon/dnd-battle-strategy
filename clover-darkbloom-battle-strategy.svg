@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">
+  <style>
+    .title { font: bold 16px Arial, sans-serif; fill: white; }
+    .subtitle { font: 10px Arial, sans-serif; fill: #a8d5a2; }
+    .node-text { font: bold 10px Arial, sans-serif; fill: white; }
+    .decision { font: bold 9px Arial, sans-serif; fill: #1a1a2e; }
+    .yes-label { font: bold 8px Arial, sans-serif; fill: #28a745; }
+    .no-label { font: bold 8px Arial, sans-serif; fill: #dc3545; }
+    .action-title { font: bold 9px Arial, sans-serif; fill: white; }
+    .action-detail { font: 7px Arial, sans-serif; fill: white; }
+    .stat-label { font: bold 8px Arial, sans-serif; fill: #1a1a2e; }
+    .stat-value { font: 8px Arial, sans-serif; fill: #4a4a6a; }
+    .section-title { font: bold 9px Arial, sans-serif; fill: #1a1a2e; }
+    .box-title { font: bold 9px Arial, sans-serif; fill: white; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="595" height="842" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect x="15" y="10" width="565" height="45" rx="6" fill="#2d5a27"/>
+  <text x="297" y="30" text-anchor="middle" class="title">CLOVER DARKBLOOM - BATTLE STRATEGY</text>
+  <text x="297" y="44" text-anchor="middle" class="subtitle">Level 2 Elf Druid | HP: 13 | AC: 15 | Spell DC: 13 | Spell Attack: +5</text>
+  
+  <!-- Reference Boxes Row -->
+  <!-- Quick Reference -->
+  <rect x="15" y="62" width="180" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="15" y="62" width="180" height="16" rx="4" fill="#495057"/>
+  <text x="105" y="73" text-anchor="middle" class="box-title">QUICK REFERENCE</text>
+  <text x="22" y="90" class="stat-label">Frostbite:</text><text x="90" y="90" class="stat-value">CON 13, 1d6 cold, 60ft</text>
+  <text x="22" y="102" class="stat-label">Spell Slots:</text><text x="90" y="102" class="stat-value">3 × 1st level</text>
+  <text x="22" y="114" class="stat-label">Wild Shape:</text><text x="90" y="114" class="stat-value">2/day, CR 1/2 max</text>
+  <text x="22" y="126" class="stat-label">Immunity:</text><text x="90" y="126" class="stat-value">Magical Sleep</text>
+  
+  <!-- Survival Priority -->
+  <rect x="205" y="62" width="180" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="205" y="62" width="180" height="16" rx="4" fill="#28a745"/>
+  <text x="295" y="73" text-anchor="middle" class="box-title">⚠ SURVIVAL PRIORITY</text>
+  <text x="212" y="90" class="stat-value">• Stay 30-60ft from enemies</text>
+  <text x="212" y="102" class="stat-value">• Healing Word is BONUS</text>
+  <text x="212" y="114" class="stat-value">• Use familiar for Help action</text>
+  <text x="212" y="126" class="stat-value">• Control &gt; damage at Lvl 2</text>
+  
+  <!-- Combat Spells -->
+  <rect x="395" y="62" width="185" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="395" y="62" width="185" height="16" rx="4" fill="#1565c0"/>
+  <text x="487" y="73" text-anchor="middle" class="box-title">COMBAT SPELLS</text>
+  <text x="402" y="90" class="stat-label">Entangle</text><text x="470" y="90" class="stat-value">STR 13, restrained, 90ft</text>
+  <text x="402" y="102" class="stat-label">Faerie Fire</text><text x="470" y="102" class="stat-value">DEX 13, Adv to hit, 60ft</text>
+  <text x="402" y="114" class="stat-label">Fog Cloud</text><text x="470" y="114" class="stat-value">120ft, 20ft sphere, blind</text>
+  <text x="402" y="126" class="stat-label">Healing Word</text><text x="470" y="126" class="stat-value">BA! 2d4+3, 60ft</text>
+
+  <!-- ============ MAIN FLOWCHART ============ -->
+  
+  <!-- START NODE -->
+  <ellipse cx="297" cy="160" rx="45" ry="16" fill="#2d5a27"/>
+  <text x="297" y="164" text-anchor="middle" class="node-text">YOUR TURN</text>
+  
+  <!-- Arrow down -->
+  <line x1="297" y1="176" x2="297" y2="195" stroke="#333" stroke-width="1.5"/>
+  <polygon points="297,200 293,192 301,192" fill="#333"/>
+  
+  <!-- Decision 1: Enemy within 30ft? -->
+  <polygon points="297,205 380,240 297,275 214,240" fill="#fff3cd" stroke="#856404" stroke-width="1.5"/>
+  <text x="297" y="237" text-anchor="middle" class="decision">Enemy within</text>
+  <text x="297" y="248" text-anchor="middle" class="decision">30ft of you?</text>
+  
+  <!-- ===== LEFT BRANCH (YES - DANGER) ===== -->
+  <line x1="214" y1="240" x2="120" y2="240" stroke="#dc3545" stroke-width="1.5"/>
+  <line x1="120" y1="240" x2="120" y2="285" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="120,290 116,282 124,282" fill="#dc3545"/>
+  <text x="165" y="233" class="no-label" fill="#dc3545">YES</text>
+  
+  <!-- Decision: Can escape? -->
+  <polygon points="120,295 180,322 120,349 60,322" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="120" y="319" text-anchor="middle" class="decision">Can you</text>
+  <text x="120" y="330" text-anchor="middle" class="decision">escape?</text>
+  
+  <!-- YES - Disengage (going left then down) -->
+  <line x1="60" y1="322" x2="35" y2="322" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="35" y1="322" x2="35" y2="335" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="35,340 31,332 39,332" fill="#28a745"/>
+  <text x="46" y="315" class="yes-label">YES</text>
+  
+  <rect x="5" y="345" width="70" height="45" rx="4" fill="#17a2b8"/>
+  <text x="40" y="355" text-anchor="middle" class="action-title">MOVE</text>
+  <text x="40" y="365" text-anchor="middle" class="action-detail">Disengage if needed</text>
+  <text x="40" y="375" text-anchor="middle" class="action-detail">Move 35ft away</text>
+  <text x="40" y="385" text-anchor="middle" class="action-detail">Frostbite if possible</text>
+  
+  <!-- NO - Can't escape -->
+  <line x1="120" y1="349" x2="120" y2="375" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="120,380 116,372 124,372" fill="#dc3545"/>
+  <text x="130" y="365" class="no-label">NO</text>
+  
+  <!-- Decision: Multiple enemies? -->
+  <polygon points="120,385 180,412 120,439 60,412" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="120" y="409" text-anchor="middle" class="decision">Multiple</text>
+  <text x="120" y="420" text-anchor="middle" class="decision">enemies?</text>
+  
+  <!-- Multiple YES - Entangle (going left) -->
+  <line x1="60" y1="412" x2="35" y2="412" stroke="#1565c0" stroke-width="1.5"/>
+  <line x1="35" y1="412" x2="35" y2="460" stroke="#1565c0" stroke-width="1.5"/>
+  <polygon points="35,465 31,457 39,457" fill="#1565c0"/>
+  <text x="46" y="425" class="yes-label">YES</text>
+  
+  <rect x="5" y="470" width="60" height="55" rx="4" fill="#1565c0"/>
+  <text x="35" y="486" text-anchor="middle" class="action-title">ENTANGLE</text>
+  <text x="35" y="498" text-anchor="middle" class="action-detail">1st Level</text>
+  <text x="35" y="508" text-anchor="middle" class="action-detail">STR 13</text>
+  <text x="35" y="518" text-anchor="middle" class="action-detail">Restrained | 90ft</text>
+  
+  <!-- Multiple NO - Frostbite -->
+  <line x1="120" y1="439" x2="120" y2="465" stroke="#6f42c1" stroke-width="1.5"/>
+  <polygon points="120,470 116,462 124,462" fill="#6f42c1"/>
+  <text x="130" y="455" class="no-label">NO</text>
+  
+  <rect x="85" y="475" width="70" height="50" rx="4" fill="#6f42c1"/>
+  <text x="120" y="489" text-anchor="middle" class="action-title">FROSTBITE</text>
+  <text x="120" y="500" text-anchor="middle" class="action-detail">Cantrip</text>
+  <text x="120" y="509" text-anchor="middle" class="action-detail">CON 13</text>
+  <text x="120" y="518" text-anchor="middle" class="action-detail">1d6 cold | 60ft</text>
+  
+  <!-- ===== RIGHT BRANCH (NO - SAFE) ===== -->
+  <line x1="380" y1="240" x2="475" y2="240" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="475" y1="240" x2="475" y2="285" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="475,290 471,282 479,282" fill="#28a745"/>
+  <text x="425" y="233" class="yes-label">NO</text>
+  
+  <!-- Decision: High priority target? -->
+  <polygon points="475,295 550,325 475,355 400,325" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="475" y="322" text-anchor="middle" class="decision">High priority</text>
+  <text x="475" y="333" text-anchor="middle" class="decision">single target?</text>
+  
+  <!-- YES - Priority target -->
+  <line x1="400" y1="325" x2="297" y2="325" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="297" y1="325" x2="297" y2="370" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="297,375 293,367 301,367" fill="#28a745"/>
+  <text x="345" y="318" class="yes-label">YES</text>
+  
+  <!-- Decision: Allies need advantage? -->
+  <polygon points="297,380 362,410 297,440 232,410" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="297" y="402" text-anchor="middle" class="decision">Allies need</text>
+  <text x="297" y="413" text-anchor="middle" class="decision">Adv to hit?</text>
+  <text x="297" y="424" text-anchor="middle" class="decision" style="font-size:7px">(slot available)</text>
+  
+  <!-- Faerie Fire YES - going left -->
+  <line x1="232" y1="410" x2="200" y2="410" stroke="#1565c0" stroke-width="1.5"/>
+  <line x1="200" y1="410" x2="200" y2="460" stroke="#1565c0" stroke-width="1.5"/>
+  <polygon points="200,465 196,457 204,457" fill="#1565c0"/>
+  <text x="214" y="403" class="yes-label" fill="#1565c0">YES</text>
+  
+  <rect x="165" y="470" width="70" height="55" rx="4" fill="#1565c0"/>
+  <text x="200" y="483" text-anchor="middle" class="action-title">FAERIE</text>
+  <text x="200" y="493" text-anchor="middle" class="action-title">FIRE</text>
+  <text x="200" y="504" text-anchor="middle" class="action-detail">1st Level</text>
+  <text x="200" y="513" text-anchor="middle" class="action-detail">DEX 13</text>
+  <text x="200" y="522" text-anchor="middle" class="action-detail">Adv to hit | 60ft</text>
+  
+  <!-- NO - Frostbite -->
+  <line x1="297" y1="440" x2="297" y2="465" stroke="#6f42c1" stroke-width="1.5"/>
+  <polygon points="297,470 293,462 301,462" fill="#6f42c1"/>
+  <text x="307" y="455" class="no-label">NO</text>
+  
+  <rect x="262" y="475" width="70" height="50" rx="4" fill="#6f42c1"/>
+  <text x="297" y="489" text-anchor="middle" class="action-title">FROSTBITE</text>
+  <text x="297" y="500" text-anchor="middle" class="action-detail">Cantrip</text>
+  <text x="297" y="509" text-anchor="middle" class="action-detail">CON 13</text>
+  <text x="297" y="518" text-anchor="middle" class="action-detail">1d6 cold | 60ft</text>
+  
+  <!-- NO - Not priority target -->
+  <line x1="475" y1="355" x2="475" y2="385" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="475,390 471,382 479,382" fill="#28a745"/>
+  <text x="485" y="373" class="no-label">NO</text>
+  
+  <!-- Decision: Grouped enemies? -->
+  <polygon points="475,395 540,425 475,455 410,425" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="475" y="422" text-anchor="middle" class="decision">Grouped</text>
+  <text x="475" y="433" text-anchor="middle" class="decision">enemies?</text>
+  
+  <!-- Grouped YES - Entangle -->
+  <line x1="540" y1="425" x2="555" y2="425" stroke="#1565c0" stroke-width="1.5"/>
+  <line x1="555" y1="425" x2="555" y2="475" stroke="#1565c0" stroke-width="1.5"/>
+  <polygon points="555,480 551,472 559,472" fill="#1565c0"/>
+  <text x="535" y="440" class="yes-label">YES</text>
+  
+  <rect x="520" y="485" width="70" height="55" rx="4" fill="#1565c0"/>
+  <text x="555" y="501" text-anchor="middle" class="action-title">ENTANGLE</text>
+  <text x="555" y="513" text-anchor="middle" class="action-detail">1st Level</text>
+  <text x="555" y="523" text-anchor="middle" class="action-detail">STR 13</text>
+  <text x="555" y="533" text-anchor="middle" class="action-detail">Restrained | 90ft</text>
+  
+  <!-- Grouped NO - Frostbite -->
+  <line x1="475" y1="455" x2="475" y2="480" stroke="#6f42c1" stroke-width="1.5"/>
+  <polygon points="475,485 471,477 479,477" fill="#6f42c1"/>
+  <text x="485" y="470" class="no-label">NO</text>
+  
+  <rect x="440" y="490" width="70" height="50" rx="4" fill="#6f42c1"/>
+  <text x="475" y="504" text-anchor="middle" class="action-title">FROSTBITE</text>
+  <text x="475" y="515" text-anchor="middle" class="action-detail">Cantrip</text>
+  <text x="475" y="524" text-anchor="middle" class="action-detail">CON 13</text>
+  <text x="475" y="533" text-anchor="middle" class="action-detail">1d6 cold | 60ft</text>
+
+  <!-- ============ BOTTOM BOXES ============ -->
+  
+  <!-- Reaction Box -->
+  <rect x="15" y="550" width="135" height="85" rx="4" fill="#343a40"/>
+  <text x="82" y="568" text-anchor="middle" class="box-title">⚡ REACTION</text>
+  <line x1="25" y1="576" x2="140" y2="576" stroke="#555" stroke-width="1"/>
+  <text x="82" y="596" text-anchor="middle" class="action-detail" style="font-size:8px">Opportunity Attack:</text>
+  <text x="82" y="613" text-anchor="middle" class="node-text">QUARTERSTAFF</text>
+  <text x="82" y="628" text-anchor="middle" class="action-detail">+3 | 1d6+1 bludg</text>
+  
+  <!-- Bonus Action Box -->
+  <rect x="160" y="550" width="135" height="85" rx="4" fill="#28a745"/>
+  <text x="227" y="568" text-anchor="middle" class="box-title">⚡ BONUS ACTION</text>
+  <line x1="170" y1="576" x2="285" y2="576" stroke="#1e7e34" stroke-width="1"/>
+  <text x="227" y="590" text-anchor="middle" class="action-detail" style="font-size:8px">Ally &lt;50% HP → Healing Word</text>
+  <text x="227" y="602" text-anchor="middle" class="action-detail" style="font-size:8px">2d4+3, 60ft | V only</text>
+  <text x="227" y="616" text-anchor="middle" class="action-detail" style="font-size:8px">OR Wild Shape (2/day)</text>
+  <text x="227" y="628" text-anchor="middle" class="action-detail" style="font-size:8px">Beast attacks, +2 Temp HP</text>
+  
+  <!-- Movement Box -->
+  <rect x="305" y="550" width="135" height="85" rx="4" fill="#17a2b8"/>
+  <text x="372" y="568" text-anchor="middle" class="box-title">📍 MOVEMENT</text>
+  <line x1="315" y1="576" x2="430" y2="576" stroke="#138496" stroke-width="1"/>
+  <text x="372" y="596" text-anchor="middle" class="action-detail" style="font-size:8px">Speed: 35ft</text>
+  <text x="372" y="610" text-anchor="middle" class="action-detail" style="font-size:8px">Stay 30-60ft from enemies</text>
+  <text x="372" y="624" text-anchor="middle" class="action-detail" style="font-size:8px">Half cover = +2 AC</text>
+  
+  <!-- Utility Cantrips Box -->
+  <rect x="450" y="550" width="130" height="85" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="450" y="550" width="130" height="16" rx="4" fill="#7b1fa2"/>
+  <text x="515" y="561" text-anchor="middle" class="box-title">UTILITY CANTRIPS</text>
+  <text x="458" y="580" class="stat-label" style="font-size:7px">Guidance</text><text x="510" y="580" class="stat-value" style="font-size:7px">Touch, +1d4 check</text>
+  <text x="458" y="594" class="stat-label" style="font-size:7px">Mage Hand</text><text x="510" y="594" class="stat-value" style="font-size:7px">30ft, manipulate</text>
+  <text x="458" y="608" class="stat-label" style="font-size:7px">Message</text><text x="510" y="608" class="stat-value" style="font-size:7px">120ft whisper</text>
+  <text x="458" y="622" class="stat-label" style="font-size:7px">Minor Illusion</text><text x="510" y="622" class="stat-value" style="font-size:7px">30ft, 5ft cube</text>
+
+  <!-- Footer Reminder -->
+  <rect x="15" y="650" width="565" height="50" rx="4" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="297" y="670" text-anchor="middle" class="stat-label" style="font-size:10px">⚔ REMEMBER: Frostbite gives enemy DISADVANTAGE on next weapon attack!</text>
+  <text x="297" y="688" text-anchor="middle" class="stat-value" style="font-size:8px">Healing Word is BONUS - attack AND heal same turn! | Wild Shape = BA, beast attacks + 2 Temp HP | Darkvision 60ft | Speed 35ft</text>
+  
+  <!-- Situational Options Box -->
+  <rect x="15" y="710" width="565" height="80" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="15" y="710" width="280" height="16" rx="4" fill="#6c757d"/>
+  <text x="155" y="721" text-anchor="middle" class="box-title">🗡 MELEE (Last Resort)</text>
+  <rect x="300" y="710" width="280" height="16" rx="4" fill="#6f42c1"/>
+  <text x="440" y="721" text-anchor="middle" class="box-title">🐻 WILD SHAPE (Bonus Action)</text>
+  
+  <text x="22" y="740" class="stat-label">Quarterstaff</text><text x="85" y="740" class="stat-value">+3, 1d6+1 bludg, Topple (DC 11 or prone)</text>
+  <text x="22" y="754" class="stat-label">Sickle</text><text x="85" y="754" class="stat-value">+3, 1d4+1 slash (needs 2nd Light wpn for Nick)</text>
+  <text x="22" y="768" class="stat-value">Use only if cornered and can't escape!</text>
+  <text x="22" y="782" class="stat-value">Topple: knock prone to give allies Advantage</text>
+  
+  <text x="307" y="740" class="stat-value">• 2 uses/day | Bonus Action to activate</text>
+  <text x="307" y="754" class="stat-value">• Use beast's attacks, keep own HP + 2 Temp HP</text>
+  <text x="307" y="768" class="stat-value">• Use when slots spent or need HP buffer</text>
+  <text x="307" y="782" class="stat-value">• Fog Cloud (1st slot): emergency escape/blind</text>
+</svg>

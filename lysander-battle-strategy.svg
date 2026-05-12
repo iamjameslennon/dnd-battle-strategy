@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">
+  <style>
+    .title { font: bold 16px Arial, sans-serif; fill: white; }
+    .subtitle { font: 10px Arial, sans-serif; fill: #d4b8e0; }
+    .node-text { font: bold 10px Arial, sans-serif; fill: white; }
+    .decision { font: bold 9px Arial, sans-serif; fill: #1a1a2e; }
+    .yes-label { font: bold 8px Arial, sans-serif; fill: #28a745; }
+    .no-label { font: bold 8px Arial, sans-serif; fill: #dc3545; }
+    .action-title { font: bold 9px Arial, sans-serif; fill: white; }
+    .action-detail { font: 7px Arial, sans-serif; fill: white; }
+    .stat-label { font: bold 8px Arial, sans-serif; fill: #1a1a2e; }
+    .stat-value { font: 8px Arial, sans-serif; fill: #4a4a6a; }
+    .section-title { font: bold 9px Arial, sans-serif; fill: #1a1a2e; }
+    .box-title { font: bold 9px Arial, sans-serif; fill: white; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="595" height="842" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <rect x="15" y="10" width="565" height="45" rx="6" fill="#6f42c1"/>
+  <text x="297" y="30" text-anchor="middle" class="title">LYSANDER - BATTLE STRATEGY</text>
+  <text x="297" y="44" text-anchor="middle" class="subtitle">Level 1 Half-Elf Bard | HP: 9 | AC: 10 | Spell DC: 13 | Spell Attack: +5</text>
+  
+  <!-- Reference Boxes Row -->
+  <!-- Quick Reference -->
+  <rect x="15" y="62" width="180" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="15" y="62" width="180" height="16" rx="4" fill="#495057"/>
+  <text x="105" y="73" text-anchor="middle" class="box-title">QUICK REFERENCE</text>
+  <text x="22" y="90" class="stat-label">Vicious Mockery:</text><text x="105" y="90" class="stat-value">WIS 13, 1d6, 60ft</text>
+  <text x="22" y="102" class="stat-label">Spell Slots:</text><text x="90" y="102" class="stat-value">2 × 1st level</text>
+  <text x="22" y="114" class="stat-label">Bardic Insp:</text><text x="90" y="114" class="stat-value">3/LR, 1d6, 60ft</text>
+  <text x="22" y="126" class="stat-label">Immunity:</text><text x="90" y="126" class="stat-value">Magical Sleep</text>
+  
+  <!-- Survival Priority -->
+  <rect x="205" y="62" width="180" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="205" y="62" width="180" height="16" rx="4" fill="#dc3545"/>
+  <text x="295" y="73" text-anchor="middle" class="box-title">⚠ SURVIVAL PRIORITY</text>
+  <text x="212" y="90" class="stat-value">• You have AC 10 - stay FAR BACK</text>
+  <text x="212" y="102" class="stat-value">• Keep 60ft+ from enemies</text>
+  <text x="212" y="114" class="stat-value">• Thunderwave if cornered</text>
+  <text x="212" y="126" class="stat-value">• Support allies, don't fight</text>
+  
+  <!-- Combat Spells -->
+  <rect x="395" y="62" width="185" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="395" y="62" width="185" height="16" rx="4" fill="#6f42c1"/>
+  <text x="487" y="73" text-anchor="middle" class="box-title">COMBAT SPELLS</text>
+  <text x="402" y="90" class="stat-label">Tasha's</text><text x="460" y="90" class="stat-value">WIS 13, prone+incap, 30ft</text>
+  <text x="402" y="102" class="stat-label">Dissonant W.</text><text x="470" y="102" class="stat-value">WIS 13, 3d6+flee, 60ft</text>
+  <text x="402" y="114" class="stat-label">Thunderwave</text><text x="470" y="114" class="stat-value">CON 13, 2d8+push, 15ft</text>
+  <text x="402" y="126" class="stat-label">Cure Wounds</text><text x="470" y="126" class="stat-value">Touch, 2d8+3 heal</text>
+
+  <!-- ============ MAIN FLOWCHART ============ -->
+  
+  <!-- START NODE -->
+  <ellipse cx="297" cy="160" rx="45" ry="16" fill="#6f42c1"/>
+  <text x="297" y="164" text-anchor="middle" class="node-text">YOUR TURN</text>
+  
+  <!-- Arrow down -->
+  <line x1="297" y1="176" x2="297" y2="188" stroke="#333" stroke-width="1.5"/>
+  <polygon points="297,193 293,185 301,185" fill="#333"/>
+  
+  <!-- Bardic Inspiration Reminder -->
+  <rect x="232" y="198" width="130" height="28" rx="4" fill="#6f42c1" stroke="#5a32a3" stroke-width="1"/>
+  <text x="297" y="212" text-anchor="middle" class="action-detail" style="font-size:8px">⚡ BONUS: Consider giving</text>
+  <text x="297" y="222" text-anchor="middle" class="action-detail" style="font-size:8px">BARDIC INSPIRATION (3/LR)</text>
+  
+  <!-- Arrow down -->
+  <line x1="297" y1="226" x2="297" y2="238" stroke="#333" stroke-width="1.5"/>
+  <polygon points="297,243 293,235 301,235" fill="#333"/>
+  
+  <!-- Decision 1: Enemy within 15ft? -->
+  <polygon points="297,248 380,283 297,318 214,283" fill="#fff3cd" stroke="#856404" stroke-width="1.5"/>
+  <text x="297" y="280" text-anchor="middle" class="decision">Enemy within</text>
+  <text x="297" y="291" text-anchor="middle" class="decision">15ft of you?</text>
+  
+  <!-- ===== LEFT BRANCH (YES - DANGER) ===== -->
+  <line x1="214" y1="283" x2="120" y2="283" stroke="#dc3545" stroke-width="1.5"/>
+  <line x1="120" y1="283" x2="120" y2="328" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="120,333 116,325 124,325" fill="#dc3545"/>
+  <text x="165" y="276" class="no-label" fill="#dc3545">YES</text>
+  
+  <!-- Decision: Can escape? -->
+  <polygon points="120,338 180,365 120,392 60,365" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="120" y="362" text-anchor="middle" class="decision">Can you</text>
+  <text x="120" y="373" text-anchor="middle" class="decision">escape?</text>
+  
+  <!-- YES - Disengage -->
+  <line x1="60" y1="365" x2="35" y2="365" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="35" y1="365" x2="35" y2="378" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="35,383 31,375 39,375" fill="#28a745"/>
+  <text x="46" y="358" class="yes-label">YES</text>
+  
+  <rect x="5" y="388" width="60" height="45" rx="4" fill="#17a2b8"/>
+  <text x="35" y="405" text-anchor="middle" class="action-title">DISENGAGE</text>
+  <text x="35" y="417" text-anchor="middle" class="action-detail">Move 30ft away</text>
+  <text x="35" y="427" text-anchor="middle" class="action-detail">Then V. Mockery</text>
+  
+  <!-- NO - Can't escape -->
+  <line x1="120" y1="392" x2="120" y2="418" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="120,423 116,415 124,415" fill="#dc3545"/>
+  <text x="130" y="408" class="no-label">NO</text>
+  
+  <!-- Decision: Multiple enemies? -->
+  <polygon points="120,428 180,455 120,482 60,455" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="120" y="452" text-anchor="middle" class="decision">Multiple</text>
+  <text x="120" y="463" text-anchor="middle" class="decision">enemies?</text>
+  
+  <!-- Multiple YES - Thunderwave -->
+  <line x1="60" y1="455" x2="35" y2="455" stroke="#dc3545" stroke-width="1.5"/>
+  <line x1="35" y1="455" x2="35" y2="503" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="35,508 31,500 39,500" fill="#dc3545"/>
+  <text x="46" y="468" class="yes-label">YES</text>
+  
+  <rect x="5" y="513" width="60" height="55" rx="4" fill="#dc3545"/>
+  <text x="35" y="526" text-anchor="middle" class="action-title">THUNDER-</text>
+  <text x="35" y="536" text-anchor="middle" class="action-title">WAVE</text>
+  <text x="35" y="547" text-anchor="middle" class="action-detail">1st Level</text>
+  <text x="35" y="556" text-anchor="middle" class="action-detail">CON 13</text>
+  <text x="35" y="565" text-anchor="middle" class="action-detail">2d8 + push 10ft</text>
+  
+  <!-- Multiple NO - Vicious Mockery (survive until escape) -->
+  <line x1="120" y1="482" x2="120" y2="508" stroke="#fd7e14" stroke-width="1.5"/>
+  <polygon points="120,513 116,505 124,505" fill="#fd7e14"/>
+  <text x="130" y="498" class="no-label">NO</text>
+  
+  <rect x="85" y="518" width="70" height="50" rx="4" fill="#fd7e14"/>
+  <text x="120" y="531" text-anchor="middle" class="action-title">VICIOUS</text>
+  <text x="120" y="541" text-anchor="middle" class="action-title">MOCKERY</text>
+  <text x="120" y="552" text-anchor="middle" class="action-detail">Cantrip | WIS 13</text>
+  <text x="120" y="561" text-anchor="middle" class="action-detail">1d6 + DisAdv | 60ft</text>
+  
+  <!-- ===== RIGHT BRANCH (NO - SAFE) ===== -->
+  <line x1="380" y1="240" x2="475" y2="240" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="475" y1="240" x2="475" y2="285" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="475,290 471,282 479,282" fill="#28a745"/>
+  <text x="425" y="233" class="yes-label">NO</text>
+  
+  <!-- Decision: High priority target? -->
+  <polygon points="475,295 550,325 475,355 400,325" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="475" y="322" text-anchor="middle" class="decision">High priority</text>
+  <text x="475" y="333" text-anchor="middle" class="decision">single target?</text>
+  
+  <!-- YES - Priority target -->
+  <line x1="400" y1="325" x2="297" y2="325" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="297" y1="325" x2="297" y2="370" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="297,375 293,367 301,367" fill="#28a745"/>
+  <text x="345" y="318" class="yes-label">YES</text>
+  
+  <!-- Decision: Worth a spell slot? -->
+  <polygon points="297,380 362,410 297,440 232,410" fill="#e2d4f0" stroke="#6f42c1" stroke-width="1.5"/>
+  <text x="297" y="402" text-anchor="middle" class="decision">Want to</text>
+  <text x="297" y="413" text-anchor="middle" class="decision">incapacitate?</text>
+  <text x="297" y="424" text-anchor="middle" class="decision" style="font-size:7px">(slot available)</text>
+  
+  <!-- Tasha's YES - going left -->
+  <line x1="232" y1="410" x2="200" y2="410" stroke="#6f42c1" stroke-width="1.5"/>
+  <line x1="200" y1="410" x2="200" y2="460" stroke="#6f42c1" stroke-width="1.5"/>
+  <polygon points="200,465 196,457 204,457" fill="#6f42c1"/>
+  <text x="214" y="403" class="yes-label" fill="#6f42c1">YES</text>
+  
+  <rect x="165" y="470" width="70" height="55" rx="4" fill="#6f42c1"/>
+  <text x="200" y="483" text-anchor="middle" class="action-title">TASHA'S</text>
+  <text x="200" y="493" text-anchor="middle" class="action-title">LAUGHTER</text>
+  <text x="200" y="504" text-anchor="middle" class="action-detail">1st Level</text>
+  <text x="200" y="513" text-anchor="middle" class="action-detail">WIS 13</text>
+  <text x="200" y="522" text-anchor="middle" class="action-detail">Prone+Incap | 30ft</text>
+  
+  <!-- NO - Damage or save slot? -->
+  <line x1="297" y1="440" x2="297" y2="455" stroke="#fd7e14" stroke-width="1.5"/>
+  <polygon points="297,460 293,452 301,452" fill="#fd7e14"/>
+  <text x="307" y="452" class="no-label">NO</text>
+  
+  <!-- Decision: Want damage + push away? -->
+  <polygon points="297,465 352,490 297,515 242,490" fill="#fff3cd" stroke="#856404" stroke-width="1"/>
+  <text x="297" y="487" text-anchor="middle" class="decision">Want dmg</text>
+  <text x="297" y="498" text-anchor="middle" class="decision">+ force flee?</text>
+  
+  <!-- YES - Dissonant Whispers -->
+  <line x1="242" y1="490" x2="210" y2="490" stroke="#6f42c1" stroke-width="1.5"/>
+  <line x1="210" y1="490" x2="210" y2="535" stroke="#6f42c1" stroke-width="1.5"/>
+  <polygon points="210,540 206,532 214,532" fill="#6f42c1"/>
+  <text x="224" y="483" class="yes-label" fill="#6f42c1">YES</text>
+  
+  <rect x="175" y="545" width="70" height="50" rx="4" fill="#007bff"/>
+  <text x="210" y="558" text-anchor="middle" class="action-title">DISSONANT</text>
+  <text x="210" y="568" text-anchor="middle" class="action-title">WHISPERS</text>
+  <text x="210" y="579" text-anchor="middle" class="action-detail">1st Level | WIS 13</text>
+  <text x="210" y="588" text-anchor="middle" class="action-detail">3d6 + flee | 60ft</text>
+  
+  <!-- NO - Vicious Mockery (free) -->
+  <line x1="297" y1="515" x2="297" y2="540" stroke="#fd7e14" stroke-width="1.5"/>
+  <polygon points="297,545 293,537 301,537" fill="#fd7e14"/>
+  <text x="307" y="532" class="no-label">NO</text>
+  
+  <rect x="262" y="550" width="70" height="45" rx="4" fill="#fd7e14"/>
+  <text x="297" y="563" text-anchor="middle" class="action-title">VICIOUS</text>
+  <text x="297" y="573" text-anchor="middle" class="action-title">MOCKERY</text>
+  <text x="297" y="584" text-anchor="middle" class="action-detail">Cantrip | WIS 13</text>
+  <text x="297" y="593" text-anchor="middle" class="action-detail">1d6 + DisAdv | 60ft</text>
+  
+  <!-- NO - Not priority target -->
+  <line x1="475" y1="355" x2="475" y2="385" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="475,390 471,382 479,382" fill="#28a745"/>
+  <text x="485" y="373" class="no-label">NO</text>
+  
+  <!-- Decision: Ally injured? -->
+  <polygon points="475,395 540,425 475,455 410,425" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="475" y="422" text-anchor="middle" class="decision">Ally DOWN</text>
+  <text x="475" y="433" text-anchor="middle" class="decision">or dying?</text>
+  
+  <!-- Ally YES - Cure Wounds -->
+  <line x1="540" y1="425" x2="560" y2="425" stroke="#28a745" stroke-width="1.5"/>
+  <line x1="560" y1="425" x2="560" y2="475" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="560,480 556,472 564,472" fill="#28a745"/>
+  <text x="540" y="440" class="yes-label">YES</text>
+  
+  <rect x="525" y="485" width="70" height="55" rx="4" fill="#28a745"/>
+  <text x="560" y="498" text-anchor="middle" class="action-title">CURE</text>
+  <text x="560" y="508" text-anchor="middle" class="action-title">WOUNDS</text>
+  <text x="560" y="519" text-anchor="middle" class="action-detail">1st Level</text>
+  <text x="560" y="528" text-anchor="middle" class="action-detail">Touch</text>
+  <text x="560" y="537" text-anchor="middle" class="action-detail">2d8+3 healing</text>
+  
+  <!-- Ally NO - Vicious Mockery -->
+  <line x1="475" y1="455" x2="475" y2="480" stroke="#fd7e14" stroke-width="1.5"/>
+  <polygon points="475,485 471,477 479,477" fill="#fd7e14"/>
+  <text x="485" y="470" class="no-label">NO</text>
+  
+  <rect x="440" y="490" width="70" height="50" rx="4" fill="#fd7e14"/>
+  <text x="475" y="501" text-anchor="middle" class="action-title">VICIOUS</text>
+  <text x="475" y="511" text-anchor="middle" class="action-title">MOCKERY</text>
+  <text x="475" y="522" text-anchor="middle" class="action-detail">Cantrip | WIS 13</text>
+  <text x="475" y="531" text-anchor="middle" class="action-detail">1d6 + DisAdv | 60ft</text>
+
+  <!-- ============ BOTTOM BOXES ============ -->
+  
+  <!-- Reaction Box -->
+  <rect x="15" y="680" width="135" height="70" rx="4" fill="#343a40"/>
+  <text x="82" y="698" text-anchor="middle" class="box-title">⚡ REACTION</text>
+  <line x1="25" y1="706" x2="140" y2="706" stroke="#555" stroke-width="1"/>
+  <text x="82" y="723" text-anchor="middle" class="action-detail" style="font-size:8px">Opportunity Attack:</text>
+  <text x="82" y="738" text-anchor="middle" class="node-text">DAGGER +2 | 1d4</text>
+  
+  <!-- Bonus Action Box -->
+  <rect x="160" y="680" width="135" height="70" rx="4" fill="#6f42c1"/>
+  <text x="227" y="698" text-anchor="middle" class="box-title">⚡ BONUS ACTION</text>
+  <line x1="170" y1="706" x2="285" y2="706" stroke="#5a32a3" stroke-width="1"/>
+  <text x="227" y="723" text-anchor="middle" class="node-text">BARDIC INSPIRATION</text>
+  <text x="227" y="738" text-anchor="middle" class="action-detail">3/LR | +1d6 | 60ft</text>
+  
+  <!-- Movement Box -->
+  <rect x="305" y="680" width="135" height="70" rx="4" fill="#17a2b8"/>
+  <text x="372" y="698" text-anchor="middle" class="box-title">📍 MOVEMENT</text>
+  <line x1="315" y1="706" x2="430" y2="706" stroke="#138496" stroke-width="1"/>
+  <text x="372" y="723" text-anchor="middle" class="action-detail" style="font-size:8px">Speed: 30ft | AC 10!</text>
+  <text x="372" y="738" text-anchor="middle" class="action-detail" style="font-size:8px">Stay 60ft+ from enemies</text>
+  
+  <!-- Utility Box -->
+  <rect x="450" y="680" width="130" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="450" y="680" width="130" height="16" rx="4" fill="#20c997"/>
+  <text x="515" y="691" text-anchor="middle" class="box-title">UTILITY</text>
+  <text x="458" y="710" class="stat-label" style="font-size:7px">Mage Hand</text><text x="510" y="710" class="stat-value" style="font-size:7px">30ft, manipulate</text>
+  <text x="458" y="724" class="stat-label" style="font-size:7px">Darkvision</text><text x="510" y="724" class="stat-value" style="font-size:7px">60ft</text>
+  <text x="458" y="738" class="stat-label" style="font-size:7px">Adv Save</text><text x="510" y="738" class="stat-value" style="font-size:7px">vs Charmed</text>
+
+  <!-- Footer Reminder -->
+  <rect x="15" y="760" width="565" height="35" rx="4" fill="#e2d4f0" stroke="#6f42c1" stroke-width="1"/>
+  <text x="297" y="778" text-anchor="middle" class="stat-label" style="font-size:10px">⚔ REMEMBER: Vicious Mockery gives enemy DISADVANTAGE on next attack!</text>
+  <text x="297" y="790" text-anchor="middle" class="stat-value" style="font-size:8px">Bardic Inspiration: ally adds 1d6 to a failed d20 test | Darkvision 60ft | Immune to Sleep</text>
+  
+  <!-- Situational Options Box -->
+  <rect x="15" y="805" width="565" height="30" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="15" y="805" width="280" height="16" rx="4" fill="#6c757d"/>
+  <text x="155" y="816" text-anchor="middle" class="box-title">🗡 WEAPONS (Last Resort)</text>
+  <rect x="300" y="805" width="280" height="16" rx="4" fill="#007bff"/>
+  <text x="440" y="816" text-anchor="middle" class="box-title">💡 BARDIC INSPIRATION</text>
+  
+  <text x="22" y="830" class="stat-value">Dagger ×2: +2, 1d4, Throw 20/60ft - NEVER melee!</text>
+  <text x="307" y="830" class="stat-value">Give BEFORE ally's key roll | 3/LR - use them!</text>
+</svg>
