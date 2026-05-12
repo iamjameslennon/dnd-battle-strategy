@@ -6,7 +6,6 @@ Battle strategy references for each character in our D&D campaigns. Each charact
 ## 📂 Structure
 
 ```
-Campaign/
 ├── characters.md              # Full party stats & D&D Beyond links
 ├── Claude Skamos/
 │   └── claude-skamos-battle-strategy.svg
