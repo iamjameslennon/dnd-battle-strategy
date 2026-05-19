@@ -39,7 +39,7 @@
   <text x="212" y="90" class="stat-value">• Stay 30-60ft from enemies</text>
   <text x="212" y="102" class="stat-value">• Healing Word is BONUS</text>
   <text x="212" y="114" class="stat-value">• Use familiar for Help action</text>
-  <text x="212" y="126" class="stat-value">• Control &gt; damage at Lvl 2</text>
+  <text x="212" y="126" class="stat-value">• Shield reaction = AC 20!</text>
   
   <!-- Combat Spells -->
   <rect x="395" y="62" width="185" height="70" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
@@ -47,7 +47,7 @@
   <text x="487" y="73" text-anchor="middle" class="box-title">COMBAT SPELLS</text>
   <text x="402" y="90" class="stat-label">Entangle</text><text x="470" y="90" class="stat-value">STR 13, restrained, 90ft</text>
   <text x="402" y="102" class="stat-label">Faerie Fire</text><text x="470" y="102" class="stat-value">DEX 13, Adv to hit, 60ft</text>
-  <text x="402" y="114" class="stat-label">Fog Cloud</text><text x="470" y="114" class="stat-value">120ft, 20ft sphere, blind</text>
+  <text x="402" y="114" class="stat-label">Shield</text><text x="470" y="114" class="stat-value">Reaction! +5 AC, 1st lvl</text>
   <text x="402" y="126" class="stat-label">Healing Word</text><text x="470" y="126" class="stat-value">BA! 2d4+3, 60ft</text>
 
   <!-- ============ MAIN FLOWCHART ============ -->
@@ -207,9 +207,10 @@
   <rect x="15" y="550" width="135" height="85" rx="4" fill="#343a40"/>
   <text x="82" y="568" text-anchor="middle" class="box-title">⚡ REACTION</text>
   <line x1="25" y1="576" x2="140" y2="576" stroke="#555" stroke-width="1"/>
-  <text x="82" y="596" text-anchor="middle" class="action-detail" style="font-size:8px">Opportunity Attack:</text>
-  <text x="82" y="613" text-anchor="middle" class="node-text">QUARTERSTAFF</text>
-  <text x="82" y="628" text-anchor="middle" class="action-detail">+3 | 1d6+1 bludg</text>
+  <text x="82" y="592" text-anchor="middle" class="node-text">SHIELD</text>
+  <text x="82" y="605" text-anchor="middle" class="action-detail" style="font-size:8px">+5 AC until next turn (1st lvl)</text>
+  <text x="82" y="618" text-anchor="middle" class="action-detail" style="font-size:7px;fill:#aaa">─── or ───</text>
+  <text x="82" y="630" text-anchor="middle" class="action-detail" style="font-size:7px">Opp. Attack: Quarterstaff +3, 1d6+1</text>
   
   <!-- Bonus Action Box -->
   <rect x="160" y="550" width="135" height="85" rx="4" fill="#28a745"/>
@@ -232,15 +233,16 @@
   <rect x="450" y="550" width="130" height="85" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
   <rect x="450" y="550" width="130" height="16" rx="4" fill="#7b1fa2"/>
   <text x="515" y="561" text-anchor="middle" class="box-title">UTILITY CANTRIPS</text>
-  <text x="458" y="580" class="stat-label" style="font-size:7px">Guidance</text><text x="510" y="580" class="stat-value" style="font-size:7px">Touch, +1d4 check</text>
-  <text x="458" y="594" class="stat-label" style="font-size:7px">Mage Hand</text><text x="510" y="594" class="stat-value" style="font-size:7px">30ft, manipulate</text>
-  <text x="458" y="608" class="stat-label" style="font-size:7px">Message</text><text x="510" y="608" class="stat-value" style="font-size:7px">120ft whisper</text>
-  <text x="458" y="622" class="stat-label" style="font-size:7px">Minor Illusion</text><text x="510" y="622" class="stat-value" style="font-size:7px">30ft, 5ft cube</text>
+  <text x="458" y="578" class="stat-label" style="font-size:7px">Druidcraft</text><text x="510" y="578" class="stat-value" style="font-size:7px">30ft, nature effects</text>
+  <text x="458" y="590" class="stat-label" style="font-size:7px">Guidance</text><text x="510" y="590" class="stat-value" style="font-size:7px">Touch, +1d4 check</text>
+  <text x="458" y="602" class="stat-label" style="font-size:7px">Mage Hand</text><text x="510" y="602" class="stat-value" style="font-size:7px">30ft, manipulate</text>
+  <text x="458" y="614" class="stat-label" style="font-size:7px">Message</text><text x="510" y="614" class="stat-value" style="font-size:7px">120ft whisper</text>
+  <text x="458" y="626" class="stat-label" style="font-size:7px">Minor Illusion</text><text x="510" y="626" class="stat-value" style="font-size:7px">30ft, 5ft cube</text>
 
   <!-- Footer Reminder -->
   <rect x="15" y="650" width="565" height="50" rx="4" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
-  <text x="297" y="670" text-anchor="middle" class="stat-label" style="font-size:10px">⚔ REMEMBER: Frostbite gives enemy DISADVANTAGE on next weapon attack!</text>
-  <text x="297" y="688" text-anchor="middle" class="stat-value" style="font-size:8px">Healing Word is BONUS - attack AND heal same turn! | Wild Shape = BA, beast attacks + 2 Temp HP | Darkvision 60ft | Speed 35ft</text>
+  <text x="297" y="670" text-anchor="middle" class="stat-label" style="font-size:10px">⚔ REMEMBER: Shield (Reaction) = AC 20! | Frostbite = enemy DISADV on next weapon attack!</text>
+  <text x="297" y="688" text-anchor="middle" class="stat-value" style="font-size:8px">Healing Word is BONUS - attack AND heal same turn! | Find Familiar (ritual, pre-combat) → Help action | Darkvision 60ft | Speed 35ft</text>
   
   <!-- Situational Options Box -->
   <rect x="15" y="710" width="565" height="80" rx="4" fill="white" stroke="#ccc" stroke-width="1"/>
@@ -256,6 +258,6 @@
   
   <text x="307" y="740" class="stat-value">• 2 uses/day | Bonus Action to activate</text>
   <text x="307" y="754" class="stat-value">• Use beast's attacks, keep own HP + 2 Temp HP</text>
-  <text x="307" y="768" class="stat-value">• Use when slots spent or need HP buffer</text>
-  <text x="307" y="782" class="stat-value">• Fog Cloud (1st slot): emergency escape/blind</text>
+  <text x="307" y="768" class="stat-value">• Fog Cloud (1st): 120ft, 20ft sphere, blind</text>
+  <text x="307" y="782" class="stat-value">• Speak w/ Animals (ritual) | Druidcraft (cantrip)</text>
 </svg>
