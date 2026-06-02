@@ -1,213 +1,215 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">
+  <!-- Built from _template.svg / STYLE-GUIDE.md. Stats synced from D&D Beyond (id 155830640).
+       Uses the full-width reference strip + a sectioned positioning row (layout variations). -->
   <style>
-    .title { font: bold 18px Arial, sans-serif; fill: white; }
-    .subtitle { font: 11px Arial, sans-serif; fill: #b0b0cc; }
-    .node-text { font: bold 10px Arial, sans-serif; fill: white; }
-    .node-small { font: 9px Arial, sans-serif; fill: white; }
-    .node-tiny { font: 8px Arial, sans-serif; fill: white; }
-    .decision { font: bold 9px Arial, sans-serif; fill: #1a1a2e; }
-    .decision-small { font: 8px Arial, sans-serif; fill: #1a1a2e; }
-    .yes-label { font: bold 8px Arial, sans-serif; fill: #2d6a4f; }
-    .no-label { font: bold 8px Arial, sans-serif; fill: #dc3545; }
-    .action-title { font: bold 9px Arial, sans-serif; fill: white; }
-    .action-detail { font: 7.5px Arial, sans-serif; fill: white; }
-    .stat-label { font: bold 8px Arial, sans-serif; fill: #1a1a2e; }
-    .stat-value { font: 8px Arial, sans-serif; fill: #4a4a6a; }
-    .section-title { font: bold 11px Arial, sans-serif; fill: #1a1a2e; }
+    .title       { font: bold 17px Arial, sans-serif; fill: #ffffff; }
+    .subtitle    { font: bold 10px Arial, sans-serif; fill: #ececf5; }
+    .box-title   { font: bold 10px Arial, sans-serif; fill: #ffffff; }
+    .node        { font: bold 12px Arial, sans-serif; fill: #ffffff; }
+    .decision    { font: bold 10px Arial, sans-serif; fill: #111111; }
+    .decision-sm { font: bold 9px Arial, sans-serif;  fill: #111111; }
+    .act-title   { font: bold 10px Arial, sans-serif; fill: #ffffff; }
+    .act-detail  { font: 9px Arial, sans-serif;       fill: #ffffff; }
+    .act-note    { font: italic 8px Arial, sans-serif; fill: #f0f0f0; }
+    .stat-label  { font: bold 9px Arial, sans-serif;  fill: #111111; }
+    .stat-value  { font: 9px Arial, sans-serif;       fill: #1a1a2e; }
+    .key-sub     { font: italic 8px Arial, sans-serif; fill: #555555; }
+    .chip        { font: bold 10px Arial, sans-serif; }
+    .bang        { font: bold 6px Arial, sans-serif;  fill: #5a1a00; }
+    .sect        { font: bold 11px Arial, sans-serif; fill: #1a1a2e; }
+    .foot        { font: bold 9px Arial, sans-serif;  fill: #1a1a2e; }
   </style>
 
-  <!-- Background -->
-  <rect width="595" height="842" fill="#fafafa"/>
+  <rect width="595" height="842" fill="#ffffff"/>
 
-  <!-- Header -->
-  <rect x="20" y="12" width="555" height="50" rx="8" fill="#1a1a2e"/>
-  <text x="297" y="33" text-anchor="middle" class="title">OSKAR — Battle Strategy</text>
-  <text x="297" y="48" text-anchor="middle" class="subtitle">Level 2 Halfling Rogue | AC 14 | HP 15 | Speed 30ft | Init +5 | Sneak Atk 1d6</text>
+  <!-- HEADER -->
+  <rect x="15" y="10" width="565" height="46" rx="6" fill="#1a1a2e"/>
+  <text x="297" y="32" text-anchor="middle" class="title">OSKAR - BATTLE STRATEGY</text>
+  <text x="297" y="48" text-anchor="middle" class="subtitle">Lv2 Halfling Rogue  |  HP 15  |  AC 14  |  Init +5  |  Speed 30ft  |  Sneak Attack +1d6 (1/turn)</text>
 
-  <!-- Quick Reference Box -->
-  <rect x="20" y="68" width="555" height="38" rx="5" fill="#eef0f5" stroke="#c0c4d0" stroke-width="1"/>
-  <text x="30" y="80" class="stat-label">Weapons:</text>
-  <text x="78" y="80" class="stat-value">Shortsword +5, 1d6+3 (Vex) | Dagger +5, 1d4+3 (Nick) | Shortbow +5, 1d6+3 (Vex)</text>
-  <text x="30" y="91" class="stat-label">Mastery:</text>
-  <text x="66" y="91" class="stat-value">Vex = hit → Adv on next atk vs target | Nick = extra Light atk as part of Attack action (frees BA!)</text>
-  <text x="30" y="102" class="stat-label">Halfling:</text>
-  <text x="66" y="102" class="stat-value">Luck (reroll 1s) | Brave (Adv vs Frightened) | Nimbleness (move thru larger creatures) | Nat. Stealthy</text>
+  <!-- FULL-WIDTH QUICK REFERENCE STRIP -->
+  <rect x="15" y="62" width="565" height="58" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="15" y="62" width="565" height="18" rx="4" fill="#495057"/>
+  <text x="297" y="75" text-anchor="middle" class="box-title">QUICK REFERENCE</text>
+  <text x="22" y="93"  class="stat-label">Weapons:</text><text x="78" y="93"  class="stat-value">Shortsword +5, 1d6+3 (Vex)  |  Dagger +5, 1d4+3 (Nick)  |  Shortbow +5, 1d6+3 (Vex) 80/320</text>
+  <text x="22" y="105" class="stat-label">Mastery:</text><text x="74" y="105" class="stat-value">Vex = on hit, ADV on your next attack vs target  |  Nick = extra Light attack within your Attack (frees bonus action)</text>
+  <text x="22" y="116" class="stat-label">Halfling:</text><text x="76" y="116" class="stat-value">Luck (reroll 1s) | Brave (adv vs Frightened) | Nimbleness (pass bigger foes) | Naturally Stealthy | Init +5 (Alert)</text>
 
-  <!-- ==================== MAIN FLOW ==================== -->
+  <!-- SYMBOL KEY -->
+  <rect x="400" y="126" width="180" height="76" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="400" y="126" width="180" height="18" rx="4" fill="#495057"/>
+  <text x="490" y="139" text-anchor="middle" class="box-title">SYMBOL KEY</text>
+  <polygon points="412,152 406,162 418,162" fill="#ffd633" stroke="#7a1019" stroke-width="0.8"/>
+  <text x="412" y="161" text-anchor="middle" class="bang">!</text>
+  <text x="428" y="160" class="stat-label">Survival / defensive</text>
+  <text x="428" y="170" class="key-sub">disengage, dash, hide</text>
+  <circle cx="412" cy="186" r="6" fill="#ffffff" stroke="#333333" stroke-width="1.2"/>
+  <text x="428" y="187" class="stat-label">Attack / Sneak Attack</text>
+  <text x="428" y="197" class="key-sub">Vex, Nick, Shortbow</text>
 
-  <!-- START node -->
-  <rect x="305" y="115" width="130" height="24" rx="12" fill="#4a4a6a"/>
-  <text x="370" y="131" text-anchor="middle" class="node-text">YOUR TURN BEGINS</text>
+  <!-- ===== FLOWCHART ===== -->
+  <ellipse cx="297" cy="150" rx="56" ry="17" fill="#2d6a4f" stroke="#13402e" stroke-width="1.5"/>
+  <text x="297" y="155" text-anchor="middle" class="node">YOUR TURN</text>
+  <line x1="297" y1="167" x2="297" y2="171" stroke="#333" stroke-width="2.5"/>
+  <polygon points="297,177 292,171 302,171" fill="#333"/>
 
-  <!-- Arrow down -->
-  <line x1="370" y1="139" x2="370" y2="150" stroke="#4a4a6a" stroke-width="1.5"/>
-  <polygon points="370,155 366,148 374,148" fill="#4a4a6a"/>
+  <!-- D1: HP/surrounded? cy205 -->
+  <polygon points="297,177 365,205 297,233 229,205" fill="#f8d7da" stroke="#9e1b27" stroke-width="2"/>
+  <text x="297" y="201" text-anchor="middle" class="decision">HP 5 or less</text>
+  <text x="297" y="214" text-anchor="middle" class="decision">or surrounded?</text>
+  <!-- SURVIVE box (left) -->
+  <rect x="40" y="177" width="148" height="56" rx="4" fill="#b32330" stroke="#6e0f17" stroke-width="1.5"/>
+  <polygon points="54,188 49,197 59,197" fill="#ffd633" stroke="#6e0f17" stroke-width="0.8"/>
+  <text x="54" y="196" text-anchor="middle" class="bang">!</text>
+  <text x="117" y="193" text-anchor="middle" class="act-title">SURVIVE</text>
+  <text x="114" y="207" text-anchor="middle" class="act-detail">Bonus: Disengage or Hide</text>
+  <text x="114" y="219" text-anchor="middle" class="act-detail">Action: Dash to safety</text>
+  <text x="114" y="229" text-anchor="middle" class="act-note">Nimbleness: slip past big foes</text>
+  <!-- D1 YES -> SURVIVE (chip above) -->
+  <line x1="229" y1="205" x2="192" y2="205" stroke="#9e1b27" stroke-width="2.5"/>
+  <polygon points="188,205 196,201 196,209" fill="#9e1b27"/>
+  <rect x="195" y="189" width="26" height="13" rx="3" fill="#ffffff" stroke="#9e1b27" stroke-width="0.8"/>
+  <text x="208" y="198.5" text-anchor="middle" class="chip" fill="#9e1b27">YES</text>
+  <!-- D1 NO down (chip right) -->
+  <line x1="297" y1="233" x2="297" y2="266" stroke="#1e7e34" stroke-width="2.5"/>
+  <polygon points="297,272 292,266 302,266" fill="#1e7e34"/>
+  <rect x="303" y="243" width="26" height="13" rx="3" fill="#ffffff" stroke="#1e7e34" stroke-width="0.8"/>
+  <text x="316" y="252.5" text-anchor="middle" class="chip" fill="#1e7e34">NO</text>
 
-  <!-- Decision 1: HP danger? y=158-208 -->
-  <polygon points="370,158 455,183 370,208 285,183" fill="#fff3cd" stroke="#856404" stroke-width="1.5"/>
-  <text x="370" y="181" text-anchor="middle" class="decision">HP ≤ 5 or</text>
-  <text x="370" y="191" text-anchor="middle" class="decision">surrounded?</text>
+  <!-- D2: ally next to target? cy300 -->
+  <polygon points="297,272 365,300 297,328 229,300" fill="#d4edda" stroke="#1e7e34" stroke-width="2"/>
+  <text x="297" y="296" text-anchor="middle" class="decision">Ally next to</text>
+  <text x="297" y="309" text-anchor="middle" class="decision">your target?</text>
+  <!-- SNEAK COMBO box (left) -->
+  <rect x="40" y="272" width="148" height="56" rx="4" fill="#1e7e34" stroke="#0f3d19" stroke-width="1.5"/>
+  <circle cx="54" cy="285" r="4.5" fill="#ffffff" stroke="#0f3d19" stroke-width="0.8"/>
+  <text x="118" y="288" text-anchor="middle" class="act-title">SNEAK COMBO</text>
+  <text x="114" y="302" text-anchor="middle" class="act-detail">Shortsword +5: 1d6+3 +1d6 SA</text>
+  <text x="114" y="314" text-anchor="middle" class="act-detail">then Dagger (Nick): 1d4+3</text>
+  <text x="114" y="324" text-anchor="middle" class="act-note">ally adjacent = auto Sneak Attack</text>
+  <!-- D2 YES -> SNEAK (chip above) -->
+  <line x1="229" y1="300" x2="192" y2="300" stroke="#1e7e34" stroke-width="2.5"/>
+  <polygon points="188,300 196,296 196,304" fill="#1e7e34"/>
+  <rect x="195" y="284" width="26" height="13" rx="3" fill="#ffffff" stroke="#1e7e34" stroke-width="0.8"/>
+  <text x="208" y="293.5" text-anchor="middle" class="chip" fill="#1e7e34">YES</text>
+  <!-- D2 NO down (chip right) -->
+  <line x1="297" y1="328" x2="297" y2="361" stroke="#1e7e34" stroke-width="2.5"/>
+  <polygon points="297,367 292,361 302,361" fill="#1e7e34"/>
+  <rect x="303" y="338" width="26" height="13" rx="3" fill="#ffffff" stroke="#1e7e34" stroke-width="0.8"/>
+  <text x="316" y="347.5" text-anchor="middle" class="chip" fill="#1e7e34">NO</text>
 
-  <!-- YES left to SURVIVE -->
-  <line x1="285" y1="183" x2="175" y2="183" stroke="#dc3545" stroke-width="1.5"/>
-  <polygon points="175,183 182,179 182,187" fill="#dc3545"/>
-  <text x="235" y="177" class="yes-label">YES</text>
+  <!-- D3: hidden or advantage? cy395 -->
+  <polygon points="297,367 365,395 297,423 229,395" fill="#fff3cd" stroke="#856404" stroke-width="2"/>
+  <text x="297" y="391" text-anchor="middle" class="decision">Hidden or have</text>
+  <text x="297" y="404" text-anchor="middle" class="decision">advantage?</text>
+  <!-- AMBUSH box (left) -->
+  <rect x="40" y="367" width="148" height="56" rx="4" fill="#4c51bf" stroke="#272a66" stroke-width="1.5"/>
+  <circle cx="54" cy="380" r="4.5" fill="#ffffff" stroke="#272a66" stroke-width="0.8"/>
+  <text x="118" y="383" text-anchor="middle" class="act-title">AMBUSH STRIKE</text>
+  <text x="114" y="397" text-anchor="middle" class="act-detail">Shortsword +5 (advantage):</text>
+  <text x="114" y="409" text-anchor="middle" class="act-detail">1d6+3 +1d6 SA, then Dagger</text>
+  <text x="114" y="419" text-anchor="middle" class="act-note">advantage qualifies Sneak Attack</text>
+  <!-- D3 YES -> AMBUSH (chip above) -->
+  <line x1="229" y1="395" x2="192" y2="395" stroke="#4c51bf" stroke-width="2.5"/>
+  <polygon points="188,395 196,391 196,399" fill="#4c51bf"/>
+  <rect x="195" y="379" width="26" height="13" rx="3" fill="#ffffff" stroke="#272a66" stroke-width="0.8"/>
+  <text x="208" y="388.5" text-anchor="middle" class="chip" fill="#272a66">YES</text>
+  <!-- D3 NO down (chip right) -->
+  <line x1="297" y1="423" x2="297" y2="456" stroke="#1e7e34" stroke-width="2.5"/>
+  <polygon points="297,462 292,456 302,456" fill="#1e7e34"/>
+  <rect x="303" y="433" width="26" height="13" rx="3" fill="#ffffff" stroke="#1e7e34" stroke-width="0.8"/>
+  <text x="316" y="442.5" text-anchor="middle" class="chip" fill="#1e7e34">NO</text>
 
-  <!-- SURVIVE box y=160-212 -->
-  <rect x="25" y="160" width="148" height="52" rx="5" fill="#dc3545"/>
-  <text x="99" y="175" text-anchor="middle" class="action-title">SURVIVE</text>
-  <text x="99" y="186" text-anchor="middle" class="action-detail">BA: Cunning Action Disengage</text>
-  <text x="99" y="196" text-anchor="middle" class="action-detail">Action: Dash away (Nimbleness</text>
-  <text x="99" y="206" text-anchor="middle" class="action-detail">thru larger foes), then Hide</text>
+  <!-- D4: enemy in melee? cy490 -->
+  <polygon points="297,462 365,490 297,518 229,490" fill="#d1ecf1" stroke="#117a8b" stroke-width="2"/>
+  <text x="297" y="486" text-anchor="middle" class="decision">Enemy in</text>
+  <text x="297" y="499" text-anchor="middle" class="decision">melee reach?</text>
+  <!-- VEX -> NICK box (left) -->
+  <rect x="40" y="462" width="148" height="56" rx="4" fill="#d9690a" stroke="#8a4205" stroke-width="1.5"/>
+  <circle cx="54" cy="475" r="4.5" fill="#ffffff" stroke="#8a4205" stroke-width="0.8"/>
+  <text x="118" y="478" text-anchor="middle" class="act-title">VEX -&gt; NICK</text>
+  <text x="114" y="492" text-anchor="middle" class="act-detail">Shortsword (Vex) +5: 1d6+3</text>
+  <text x="114" y="504" text-anchor="middle" class="act-detail">then Dagger (Nick): +1d6 SA</text>
+  <text x="114" y="514" text-anchor="middle" class="act-note">best Sneak Attack, no setup</text>
+  <!-- D4 YES -> VEX-NICK (chip above) -->
+  <line x1="229" y1="490" x2="192" y2="490" stroke="#d9690a" stroke-width="2.5"/>
+  <polygon points="188,490 196,486 196,494" fill="#d9690a"/>
+  <rect x="195" y="474" width="26" height="13" rx="3" fill="#ffffff" stroke="#a04e08" stroke-width="0.8"/>
+  <text x="208" y="483.5" text-anchor="middle" class="chip" fill="#a04e08">YES</text>
+  <!-- D4 NO -> RANGED (right, chip above) -->
+  <line x1="365" y1="490" x2="434" y2="490" stroke="#0069d9" stroke-width="2.5"/>
+  <polygon points="440,490 432,486 432,494" fill="#0069d9"/>
+  <rect x="388" y="474" width="26" height="13" rx="3" fill="#ffffff" stroke="#003e80" stroke-width="0.8"/>
+  <text x="401" y="483.5" text-anchor="middle" class="chip" fill="#003e80">NO</text>
+  <!-- RANGED box (right) -->
+  <rect x="440" y="463" width="140" height="56" rx="4" fill="#0069d9" stroke="#003e80" stroke-width="1.5"/>
+  <circle cx="454" cy="476" r="4.5" fill="#ffffff" stroke="#003e80" stroke-width="0.8"/>
+  <text x="514" y="479" text-anchor="middle" class="act-title">RANGED</text>
+  <text x="510" y="493" text-anchor="middle" class="act-detail">Shortbow (Vex) +5</text>
+  <text x="510" y="505" text-anchor="middle" class="act-detail">1d6+3, 80/320 ft</text>
+  <text x="510" y="515" text-anchor="middle" class="act-note">no SA unless adv or ally flank</text>
 
-  <!-- NO down -->
-  <line x1="370" y1="208" x2="370" y2="232" stroke="#28a745" stroke-width="1.5"/>
-  <polygon points="370,237 366,230 374,230" fill="#28a745"/>
-  <text x="380" y="224" class="no-label">NO</text>
+  <!-- ===== SECTION: POSITIONING FOR SNEAK ATTACK ===== -->
+  <line x1="20" y1="540" x2="575" y2="540" stroke="#c0c4d0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="297" y="556" text-anchor="middle" class="sect">POSITIONING FOR SNEAK ATTACK</text>
+  <rect x="15" y="564" width="184" height="60" rx="4" fill="#1e7e34" stroke="#0f3d19" stroke-width="1.5"/>
+  <text x="107" y="579" text-anchor="middle" class="act-title">BEST: beside an ally</text>
+  <text x="107" y="593" text-anchor="middle" class="act-detail">Attack a foe your ally is next to</text>
+  <text x="107" y="605" text-anchor="middle" class="act-detail">= Sneak Attack is automatic.</text>
+  <text x="107" y="617" text-anchor="middle" class="act-note">Then slip behind cover.</text>
+  <rect x="205" y="564" width="184" height="60" rx="4" fill="#4c51bf" stroke="#272a66" stroke-width="1.5"/>
+  <text x="297" y="579" text-anchor="middle" class="act-title">GOOD: use cover</text>
+  <text x="297" y="593" text-anchor="middle" class="act-detail">Stay near objects/creatures so</text>
+  <text x="297" y="605" text-anchor="middle" class="act-detail">you can Hide (BA) for advantage</text>
+  <text x="297" y="617" text-anchor="middle" class="act-note">-> next-turn Ambush Strike.</text>
+  <rect x="395" y="564" width="185" height="60" rx="4" fill="#d9690a" stroke="#8a4205" stroke-width="1.5"/>
+  <text x="487" y="579" text-anchor="middle" class="act-title">OK: stay at range</text>
+  <text x="487" y="593" text-anchor="middle" class="act-detail">No setup? Shortbow from 80ft,</text>
+  <text x="487" y="605" text-anchor="middle" class="act-detail">or Vex-&gt;Nick in melee.</text>
+  <text x="487" y="617" text-anchor="middle" class="act-note">15 HP - keep moving.</text>
 
-  <!-- Decision 2: Ally within 5ft? y=240-290 -->
-  <polygon points="370,240 460,265 370,290 280,265" fill="#e2d4f0" stroke="#6f42c1" stroke-width="1.5"/>
-  <text x="370" y="260" text-anchor="middle" class="decision">Ally within 5ft</text>
-  <text x="370" y="270" text-anchor="middle" class="decision">of your target?</text>
-  <text x="370" y="281" text-anchor="middle" class="decision-small">(Sneak Atk source)</text>
+  <!-- ===== BOTTOM UTILITY ROW ===== -->
+  <rect x="15" y="700" width="135" height="100" rx="4" fill="#343a40" stroke="#15181c" stroke-width="1.5"/>
+  <text x="82" y="716" text-anchor="middle" class="box-title">REACTION</text>
+  <line x1="25" y1="722" x2="140" y2="722" stroke="#666" stroke-width="1.2"/>
+  <text x="22" y="736" class="act-title">Opportunity Attack</text>
+  <text x="22" y="750" class="act-detail">Shortsword / Dagger +5</text>
+  <text x="22" y="762" class="act-detail">when a foe leaves reach.</text>
+  <text x="22" y="776" class="act-detail">Can carry a 2nd Sneak</text>
+  <text x="22" y="788" class="act-note">Attack (it's once per TURN).</text>
 
-  <!-- YES left to OPTIMAL COMBO -->
-  <line x1="280" y1="265" x2="175" y2="265" stroke="#28a745" stroke-width="1.5"/>
-  <polygon points="175,265 182,261 182,269" fill="#28a745"/>
-  <text x="232" y="259" class="yes-label">YES</text>
+  <rect x="160" y="700" width="135" height="100" rx="4" fill="#4c51bf" stroke="#272a66" stroke-width="1.5"/>
+  <text x="227" y="716" text-anchor="middle" class="box-title">BONUS ACTION</text>
+  <line x1="170" y1="722" x2="285" y2="722" stroke="#8a8fd6" stroke-width="1.2"/>
+  <text x="227" y="738" text-anchor="middle" class="act-title">CUNNING ACTION</text>
+  <text x="227" y="752" text-anchor="middle" class="act-detail">Dash / Disengage / Hide</text>
+  <text x="227" y="766" text-anchor="middle" class="act-detail">Nick gives a free Light</text>
+  <text x="227" y="778" text-anchor="middle" class="act-detail">attack in your Attack, so</text>
+  <text x="227" y="790" text-anchor="middle" class="act-note">your bonus action stays open.</text>
 
-  <!-- OPTIMAL COMBO box y=232-304 -->
-  <rect x="25" y="232" width="148" height="72" rx="5" fill="#28a745"/>
-  <text x="99" y="245" text-anchor="middle" class="action-title">OPTIMAL COMBO</text>
-  <text x="99" y="257" text-anchor="middle" class="action-detail">1. Shortsword (Vex) +5</text>
-  <text x="99" y="267" text-anchor="middle" class="action-detail">   1d6+3 + 1d6 SA on hit!</text>
-  <text x="99" y="279" text-anchor="middle" class="action-detail">2. Dagger (Nick) +5</text>
-  <text x="99" y="289" text-anchor="middle" class="action-detail">   1d4+3 (free extra atk)</text>
-  <text x="99" y="300" text-anchor="middle" class="node-tiny">Take SA on 1st hit — guaranteed!</text>
+  <rect x="305" y="700" width="135" height="100" rx="4" fill="#138496" stroke="#0a4a52" stroke-width="1.5"/>
+  <text x="372" y="716" text-anchor="middle" class="box-title">MOVEMENT</text>
+  <line x1="315" y1="722" x2="430" y2="722" stroke="#0d6473" stroke-width="1.2"/>
+  <text x="312" y="736" class="act-detail">Speed: 30 ft</text>
+  <text x="312" y="750" class="act-detail">Get beside an ally's</text>
+  <text x="312" y="762" class="act-detail">target, or to cover.</text>
+  <text x="312" y="776" class="act-detail">Nimbleness: move thru</text>
+  <text x="312" y="788" class="act-detail">bigger creatures.</text>
 
-  <!-- NO down -->
-  <line x1="370" y1="290" x2="370" y2="322" stroke="#dc3545" stroke-width="1.5"/>
-  <polygon points="370,327 366,320 374,320" fill="#dc3545"/>
-  <text x="380" y="311" class="no-label">NO</text>
+  <rect x="450" y="700" width="130" height="100" rx="4" fill="#ffffff" stroke="#117a5f" stroke-width="1.5"/>
+  <rect x="450" y="700" width="130" height="18" rx="4" fill="#20a07a"/>
+  <text x="515" y="713" text-anchor="middle" class="box-title">SNEAK ATTACK</text>
+  <text x="455" y="731" class="stat-value">+1d6, once per TURN</text>
+  <text x="455" y="744" class="stat-value">Needs: advantage, OR</text>
+  <text x="455" y="757" class="stat-value">an ally within 5ft of</text>
+  <text x="455" y="770" class="stat-value">the target (and no disadv).</text>
+  <text x="455" y="784" class="stat-value">Take it on your 1st</text>
+  <text x="455" y="795" class="key-sub">qualifying hit. Luck: reroll 1s.</text>
 
-  <!-- Decision 3: Hidden or have Adv? y=330-380 -->
-  <polygon points="370,330 455,355 370,380 285,355" fill="#fff3cd" stroke="#856404" stroke-width="1.5"/>
-  <text x="370" y="352" text-anchor="middle" class="decision">Are you Hidden</text>
-  <text x="370" y="362" text-anchor="middle" class="decision">or have Adv?</text>
-
-  <!-- YES left to AMBUSH STRIKE -->
-  <line x1="285" y1="355" x2="175" y2="355" stroke="#28a745" stroke-width="1.5"/>
-  <polygon points="175,355 182,351 182,359" fill="#28a745"/>
-  <text x="235" y="349" class="yes-label">YES</text>
-
-  <!-- AMBUSH STRIKE box y=324-386 -->
-  <rect x="25" y="324" width="148" height="62" rx="5" fill="#4c51bf"/>
-  <text x="99" y="337" text-anchor="middle" class="action-title">AMBUSH STRIKE</text>
-  <text x="99" y="349" text-anchor="middle" class="action-detail">1. Shortsword +5 (w/ Adv)</text>
-  <text x="99" y="359" text-anchor="middle" class="action-detail">   1d6+3 + 1d6 SA on hit!</text>
-  <text x="99" y="371" text-anchor="middle" class="action-detail">2. Dagger (Nick) +5</text>
-  <text x="99" y="381" text-anchor="middle" class="action-detail">   1d4+3 bonus attack</text>
-
-  <!-- NO down -->
-  <line x1="370" y1="380" x2="370" y2="410" stroke="#dc3545" stroke-width="1.5"/>
-  <polygon points="370,415 366,408 374,408" fill="#dc3545"/>
-  <text x="380" y="399" class="no-label">NO</text>
-
-  <!-- Decision 4: Melee range? y=418-468 -->
-  <polygon points="370,418 455,443 370,468 285,443" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
-  <text x="370" y="440" text-anchor="middle" class="decision">Enemy within</text>
-  <text x="370" y="450" text-anchor="middle" class="decision">melee range?</text>
-
-  <!-- YES left to VEX → NICK COMBO -->
-  <line x1="285" y1="443" x2="175" y2="443" stroke="#28a745" stroke-width="1.5"/>
-  <polygon points="175,443 182,439 182,447" fill="#28a745"/>
-  <text x="235" y="437" class="yes-label">YES</text>
-
-  <!-- VEX → NICK COMBO box y=406-488 -->
-  <rect x="25" y="406" width="148" height="82" rx="5" fill="#d97706"/>
-  <text x="99" y="419" text-anchor="middle" class="action-title">VEX → NICK COMBO</text>
-  <text x="99" y="431" text-anchor="middle" class="action-detail">1. Shortsword (Vex) +5</text>
-  <text x="99" y="441" text-anchor="middle" class="action-detail">   1d6+3 piercing</text>
-  <text x="99" y="451" text-anchor="middle" class="action-detail">   If hit → Adv next atk!</text>
-  <text x="99" y="463" text-anchor="middle" class="action-detail">2. Dagger (Nick) +5</text>
-  <text x="99" y="473" text-anchor="middle" class="action-detail">   1d4+3 + 1d6 SNEAK</text>
-  <text x="99" y="484" text-anchor="middle" class="node-tiny">★ Best no-setup Sneak Atk path</text>
-
-  <!-- NO right to RANGED -->
-  <line x1="455" y1="443" x2="510" y2="443" stroke="#dc3545" stroke-width="1.5"/>
-  <line x1="510" y1="443" x2="510" y2="460" stroke="#dc3545" stroke-width="1.5"/>
-  <polygon points="510,465 506,458 514,458" fill="#dc3545"/>
-  <text x="480" y="437" class="no-label">NO</text>
-
-  <!-- RANGED ATTACK box -->
-  <rect x="440" y="468" width="135" height="55" rx="5" fill="#0d6efd"/>
-  <text x="507" y="481" text-anchor="middle" class="action-title">RANGED ATTACK</text>
-  <text x="507" y="493" text-anchor="middle" class="action-detail">Shortbow +5 (Vex)</text>
-  <text x="507" y="503" text-anchor="middle" class="action-detail">1d6+3 piercing, 80/320</text>
-  <text x="507" y="513" text-anchor="middle" class="action-detail">No Sneak Atk unless Adv/ally</text>
-
-  <!-- ==================== BONUS ACTION SECTION ==================== -->
-  <line x1="20" y1="540" x2="575" y2="540" stroke="#c0c4d0" stroke-width="0.5" stroke-dasharray="4,3"/>
-  <text x="297" y="557" text-anchor="middle" class="section-title">BONUS ACTION</text>
-
-  <!-- Decision: Can you hide? -->
-  <polygon points="297,568 387,593 297,618 207,593" fill="#e0e7ff" stroke="#4c51bf" stroke-width="1.5"/>
-  <text x="297" y="590" text-anchor="middle" class="decision">Can you Hide?</text>
-  <text x="297" y="600" text-anchor="middle" class="decision-small">(cover / obscured)</text>
-
-  <!-- YES left to HIDE -->
-  <line x1="207" y1="593" x2="145" y2="593" stroke="#28a745" stroke-width="1.5"/>
-  <polygon points="145,593 152,589 152,597" fill="#28a745"/>
-  <text x="178" y="587" class="yes-label">YES</text>
-
-  <rect x="25" y="575" width="118" height="42" rx="5" fill="#4c51bf"/>
-  <text x="84" y="590" text-anchor="middle" class="action-title">CUNNING: HIDE (+7)</text>
-  <text x="84" y="601" text-anchor="middle" class="action-detail">Naturally Stealthy: only</text>
-  <text x="84" y="611" text-anchor="middle" class="action-detail">need creature cover!</text>
-
-  <!-- NO right to TWO-WEAPON -->
-  <line x1="387" y1="593" x2="440" y2="593" stroke="#dc3545" stroke-width="1.5"/>
-  <polygon points="440,593 433,589 433,597" fill="#dc3545"/>
-  <text x="410" y="587" class="no-label">NO</text>
-
-  <rect x="442" y="575" width="130" height="42" rx="5" fill="#6c757d"/>
-  <text x="507" y="590" text-anchor="middle" class="action-title">CUNNING: DASH/DISENGAGE</text>
-  <text x="507" y="601" text-anchor="middle" class="action-detail">Reposition or escape safely</text>
-  <text x="507" y="611" text-anchor="middle" class="action-detail">(Nick = free, BA stays open!)</text>
-
-  <!-- ==================== MOVEMENT TIPS ==================== -->
-  <line x1="20" y1="632" x2="575" y2="632" stroke="#c0c4d0" stroke-width="0.5" stroke-dasharray="4,3"/>
-  <text x="297" y="649" text-anchor="middle" class="section-title">MOVEMENT PRIORITIES</text>
-
-  <rect x="25" y="658" width="170" height="50" rx="5" fill="#198754" opacity="0.9"/>
-  <text x="110" y="672" text-anchor="middle" class="action-title">BEST: NEAR ALLY</text>
-  <text x="110" y="683" text-anchor="middle" class="action-detail">Attack target your ally is</text>
-  <text x="110" y="693" text-anchor="middle" class="action-detail">next to = guaranteed Sneak Atk</text>
-  <text x="110" y="703" text-anchor="middle" class="action-detail">then move behind ally for cover</text>
-
-  <rect x="212" y="658" width="170" height="50" rx="5" fill="#4c51bf" opacity="0.9"/>
-  <text x="297" y="672" text-anchor="middle" class="action-title">GOOD: FIND COVER</text>
-  <text x="297" y="683" text-anchor="middle" class="action-detail">Stay near objects/creatures</text>
-  <text x="297" y="693" text-anchor="middle" class="action-detail">to enable Bonus Action Hide</text>
-  <text x="297" y="703" text-anchor="middle" class="action-detail">for next turn's Ambush Strike</text>
-
-  <rect x="399" y="658" width="170" height="50" rx="5" fill="#d97706" opacity="0.9"/>
-  <text x="484" y="672" text-anchor="middle" class="action-title">OK: STAY AT RANGE</text>
-  <text x="484" y="683" text-anchor="middle" class="action-detail">Shortbow from 80ft if no</text>
-  <text x="484" y="693" text-anchor="middle" class="action-detail">Sneak Atk sources available</text>
-  <text x="484" y="703" text-anchor="middle" class="action-detail">15 HP = still stay mobile!</text>
-
-  <!-- ==================== REMINDERS ==================== -->
-  <rect x="20" y="722" width="555" height="60" rx="5" fill="#1a1a2e"/>
-  <text x="297" y="737" text-anchor="middle" class="node-text">REMEMBER</text>
-  <text x="297" y="748" text-anchor="middle" class="node-small">★ Alert: Prof bonus to Init (scales!), swap Init order with a willing ally after rolling</text>
-  <text x="297" y="759" text-anchor="middle" class="node-small">★ Cunning Action (L2): Dash, Disengage, or Hide as Bonus Action — Nick frees your BA every turn!</text>
-  <text x="297" y="770" text-anchor="middle" class="node-small">★ SA is once per TURN — take it on 1st hit when you qualify. With Vex→Nick (no ally), save for Dagger.</text>
-  <text x="297" y="781" text-anchor="middle" class="node-small">★ Opportunity Attacks are on the ENEMY's turn — you can land a 2nd Sneak Atk via OA each round!</text>
-
-  <!-- ==================== DAMAGE REFERENCE ==================== -->
-  <rect x="20" y="792" width="555" height="40" rx="5" fill="#eef0f5" stroke="#c0c4d0" stroke-width="1"/>
-  <text x="297" y="806" text-anchor="middle" class="stat-label">DAMAGE SUMMARY PER TURN</text>
-  <text x="150" y="818" text-anchor="middle" class="stat-value">With Sneak Atk: 1d6+3 + 1d4+3 + 1d6 = avg 15.5</text>
-  <text x="445" y="818" text-anchor="middle" class="stat-value">Without Sneak Atk: 1d6+3 + 1d4+3 = avg 12</text>
+  <!-- FOOTER -->
+  <rect x="15" y="806" width="565" height="30" rx="4" fill="#fff3cd" stroke="#856404" stroke-width="1.5"/>
+  <polygon points="27,812 21,822 33,822" fill="#d9690a" stroke="#5a4500" stroke-width="0.8"/>
+  <text x="27" y="820.5" text-anchor="middle" class="bang" fill="#ffffff">!</text>
+  <text x="302" y="820" text-anchor="middle" class="foot" fill="#5a4500">Sneak Attack is once per TURN - an Opportunity Attack on the enemy's turn can land a 2nd per round. ~15.5 dmg/turn.</text>
+  <text x="302" y="832" text-anchor="middle" class="stat-value" fill="#5a4500" style="font-size:8px">Synced: 2026-06-01  -  Lv2  -  regenerate from D&amp;D Beyond after level-ups</text>
 </svg>

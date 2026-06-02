@@ -7,6 +7,7 @@
 | Idhren | Elf | Barbarian | 2 | 14 | 21 | DEX 16 (+3) | [Sheet](https://www.dndbeyond.com/characters/155829352) |
 | Clover Darkbloom | Elf | Druid | 2 | 15 | 13 | WIS 16 (+3) | [Sheet](https://www.dndbeyond.com/characters/155665213) |
 | Claude Skamos | Tiefling | Wizard | 2 | 10 | 10 | INT 17 (+3) | [Sheet](https://www.dndbeyond.com/characters/155447750) |
+| Ael Varris | Half-Elf | Bard | 1 | 12 | 7 | CHA 17 (+3) | [Sheet](https://www.dndbeyond.com/characters/166265317/FM7rMo) |
 
 ## Character IDs (for ddb-mcp lookups)
 
@@ -15,3 +16,4 @@
 - **Idhren** — `155829352`
 - **Clover Darkbloom** — `155665213`
 - **Claude Skamos** — `155447750`
+- **Ael Varris** — `166265317`

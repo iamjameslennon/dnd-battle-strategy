@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">
-  <!-- Built from _template.svg / STYLE-GUIDE.md. Stats synced from D&D Beyond (id 162797600). Now Lv2. -->
+  <!-- Built from _template.svg / STYLE-GUIDE.md. Stats synced from D&D Beyond (id 166265317). -->
   <style>
     .title       { font: bold 17px Arial, sans-serif; fill: #ffffff; }
     .subtitle    { font: bold 10px Arial, sans-serif; fill: #ececf5; }
@@ -22,18 +22,18 @@
 
   <!-- HEADER -->
   <rect x="15" y="10" width="565" height="46" rx="6" fill="#1a1a2e"/>
-  <text x="297" y="32" text-anchor="middle" class="title">LYSANDER - BATTLE STRATEGY</text>
-  <text x="297" y="48" text-anchor="middle" class="subtitle">Lv2 Half-Elf Bard  |  HP 13  |  AC 10  |  Spell DC 13  |  Atk +5  |  3 x 1st slots  |  Bardic Insp 3/LR (d6)</text>
+  <text x="297" y="32" text-anchor="middle" class="title">AEL VARRIS - BATTLE STRATEGY</text>
+  <text x="297" y="48" text-anchor="middle" class="subtitle">Lv1 Half-Elf Bard  |  HP 7  |  AC 12  |  Spell DC 13  |  Atk +5  |  2 x 1st slots  |  Bardic Insp 3/LR (d6)</text>
 
   <!-- REFERENCE ROW -->
   <rect x="15" y="62" width="180" height="92" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
   <rect x="15" y="62" width="180" height="18" rx="4" fill="#495057"/>
   <text x="105" y="75" text-anchor="middle" class="box-title">QUICK REFERENCE</text>
   <text x="22" y="93"  class="stat-label">V. Mockery:</text><text x="92" y="93"  class="stat-value">WIS 13, 1d6, 60ft</text>
-  <text x="22" y="106" class="stat-label">Slots:</text><text x="92" y="106" class="stat-value">3 x 1st level</text>
+  <text x="22" y="106" class="stat-label">Slots:</text><text x="92" y="106" class="stat-value">2 x 1st level</text>
   <text x="22" y="119" class="stat-label">Bardic:</text><text x="92" y="119" class="stat-value">3/LR, d6, 60ft</text>
-  <text x="22" y="132" class="stat-label">Init:</text><text x="92" y="132" class="stat-value">+0 | Darkvision 60</text>
-  <text x="22" y="145" class="stat-label">Dagger:</text><text x="92" y="145" class="stat-value">+2, 1d4 (throw 20/60)</text>
+  <text x="22" y="132" class="stat-label">Init:</text><text x="92" y="132" class="stat-value">+1 | Darkvision 60</text>
+  <text x="22" y="145" class="stat-label">Dagger:</text><text x="92" y="145" class="stat-value">+3, 1d4+1 (throw 20/60)</text>
 
   <!-- SURVIVAL PRIORITY (red, !) -->
   <rect x="205" y="62" width="180" height="92" rx="4" fill="#ffffff" stroke="#9e1b27" stroke-width="1.5"/>
@@ -41,21 +41,21 @@
   <polygon points="218,67 213,76 223,76" fill="#ffd633" stroke="#7a1019" stroke-width="0.8"/>
   <text x="218" y="74.5" text-anchor="middle" class="bang">!</text>
   <text x="300" y="75" text-anchor="middle" class="box-title">SURVIVAL PRIORITY</text>
-  <text x="212" y="93"  class="stat-value">- AC 10, HP 13: stay FAR back</text>
-  <text x="212" y="106" class="stat-value">- Keep 60ft+ from enemies</text>
-  <text x="212" y="119" class="stat-value">- Never melee - you are support</text>
-  <text x="212" y="132" class="stat-value">- Thunderwave only if cornered</text>
-  <text x="212" y="145" class="stat-value">- Inspire allies &gt; deal damage</text>
+  <text x="212" y="93"  class="stat-value">- AC 12, HP 7: VERY fragile</text>
+  <text x="212" y="106" class="stat-value">- Stay 60ft+ back, never melee</text>
+  <text x="212" y="119" class="stat-value">- Only 2 slots - spend wisely</text>
+  <text x="212" y="132" class="stat-value">- Inspire allies &gt; deal damage</text>
+  <text x="212" y="145" class="stat-value">- Stay behind the front line</text>
 
   <!-- COMBAT SPELLS (purple) -->
   <rect x="395" y="62" width="185" height="92" rx="4" fill="#ffffff" stroke="#5a3a91" stroke-width="1.5"/>
   <rect x="395" y="62" width="185" height="18" rx="4" fill="#6f42c1"/>
   <text x="487" y="75" text-anchor="middle" class="box-title">COMBAT SPELLS (1st)</text>
-  <text x="402" y="93"  class="stat-label">Tasha's</text><text x="455" y="93"  class="stat-value">WIS 13, prone+incap, 30ft</text>
-  <text x="402" y="106" class="stat-label">Dissonant</text><text x="462" y="106" class="stat-value">WIS 13, 3d6+flee, 60ft</text>
-  <text x="402" y="119" class="stat-label">Thunderwave</text><text x="472" y="119" class="stat-value">CON 13, 2d8+push, 15ft</text>
-  <text x="402" y="132" class="stat-label">Cure Wounds</text><text x="472" y="132" class="stat-value">touch, 2d8+3 heal</text>
-  <text x="402" y="146" class="key-sub">Spend slots on control + healing; mock for free.</text>
+  <text x="402" y="93"  class="stat-label">Faerie Fire</text><text x="465" y="93"  class="stat-value">DEX 13, adv to hit, 60ft</text>
+  <text x="402" y="106" class="stat-label">Thunderw.</text><text x="465" y="106" class="stat-value">CON 13, 2d8+push, 15ft</text>
+  <text x="402" y="119" class="stat-label">Cure W.</text><text x="465" y="119" class="stat-value">touch, 2d8+3 heal</text>
+  <text x="402" y="132" class="stat-label">Cantrips</text><text x="465" y="132" class="stat-value">V. Mockery, Minor Illusion</text>
+  <text x="402" y="146" class="key-sub">Just 2 slots - Faerie Fire / heal / escape only.</text>
 
   <!-- SYMBOL KEY -->
   <rect x="400" y="160" width="180" height="104" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
@@ -67,7 +67,7 @@
   <text x="428" y="204" class="key-sub">escape, heal a downed ally</text>
   <polygon points="412,212 419,219 412,226 405,219" fill="#ffffff" stroke="#333333" stroke-width="1.2"/>
   <text x="428" y="220" class="stat-label">Control / utility</text>
-  <text x="428" y="230" class="key-sub">Tasha's, Dissonant, Inspire</text>
+  <text x="428" y="230" class="key-sub">Faerie Fire, Inspire</text>
   <circle cx="412" cy="244" r="6" fill="#ffffff" stroke="#333333" stroke-width="1.2"/>
   <text x="428" y="246" class="stat-label">Attack / damage</text>
   <text x="428" y="256" class="key-sub">Vicious Mockery</text>
@@ -95,7 +95,7 @@
   <polygon points="54,251 49,260 59,260" fill="#ffd633" stroke="#6e0f17" stroke-width="0.8"/>
   <text x="54" y="259" text-anchor="middle" class="bang">!</text>
   <text x="114" y="256" text-anchor="middle" class="act-title">BREAK CONTACT</text>
-  <text x="111" y="270" text-anchor="middle" class="act-detail">Disengage 30ft, then mock</text>
+  <text x="111" y="270" text-anchor="middle" class="act-detail">Move away, then mock</text>
   <text x="111" y="282" text-anchor="middle" class="act-detail">Cornered: Thunderwave</text>
   <text x="111" y="292" text-anchor="middle" class="act-note">CON 13, 2d8 + push 10ft</text>
   <!-- D1 YES -> BREAK (chip above) -->
@@ -120,7 +120,7 @@
   <text x="114" y="338" text-anchor="middle" class="act-title">CURE WOUNDS</text>
   <text x="111" y="353" text-anchor="middle" class="act-detail">1st-level slot, touch</text>
   <text x="111" y="365" text-anchor="middle" class="act-detail">2d8+3 healing</text>
-  <text x="111" y="374" text-anchor="middle" class="act-note">stabilise a downed ally</text>
+  <text x="111" y="374" text-anchor="middle" class="act-note">1 of only 2 slots - reserve it</text>
   <!-- D2 YES -> CURE (chip above) -->
   <line x1="229" y1="350" x2="186" y2="350" stroke="#1e7e34" stroke-width="2.5"/>
   <polygon points="182,350 190,346 190,354" fill="#1e7e34"/>
@@ -132,61 +132,43 @@
   <rect x="303" y="378" width="26" height="13" rx="3" fill="#ffffff" stroke="#1e7e34" stroke-width="0.8"/>
   <text x="316" y="387.5" text-anchor="middle" class="chip" fill="#1e7e34">NO</text>
 
-  <!-- D3: disable a key foe? cy430 -->
-  <polygon points="297,404 365,430 297,456 229,430" fill="#fff3cd" stroke="#856404" stroke-width="2"/>
-  <text x="297" y="426" text-anchor="middle" class="decision">Disable a key</text>
-  <text x="297" y="439" text-anchor="middle" class="decision">single foe?</text>
-  <!-- D3 NO -> right elbow down to MOCKERY -->
-  <line x1="365" y1="430" x2="420" y2="430" stroke="#a04e08" stroke-width="2.5"/>
-  <line x1="420" y1="430" x2="420" y2="591" stroke="#a04e08" stroke-width="2.5"/>
-  <line x1="420" y1="591" x2="379" y2="591" stroke="#a04e08" stroke-width="2.5"/>
-  <polygon points="375,591 383,587 383,595" fill="#a04e08"/>
-  <rect x="375" y="424" width="26" height="13" rx="3" fill="#ffffff" stroke="#a04e08" stroke-width="0.8"/>
-  <text x="388" y="433.5" text-anchor="middle" class="chip" fill="#a04e08">NO</text>
-  <!-- D3 YES down (chip right) -->
-  <line x1="297" y1="456" x2="297" y2="478" stroke="#6f42c1" stroke-width="2.5"/>
-  <polygon points="297,484 292,478 302,478" fill="#6f42c1"/>
-  <rect x="303" y="458" width="26" height="13" rx="3" fill="#ffffff" stroke="#5a3a91" stroke-width="0.8"/>
-  <text x="316" y="467.5" text-anchor="middle" class="chip" fill="#5a3a91">YES</text>
-
-  <!-- D3b: spend a slot? cy508 -->
-  <polygon points="297,484 363,508 297,532 231,508" fill="#e2d4f0" stroke="#5a3a91" stroke-width="2"/>
-  <text x="297" y="506" text-anchor="middle" class="decision-sm">Spend a slot</text>
-  <text x="297" y="518" text-anchor="middle" class="decision-sm">on it?</text>
-  <!-- DISABLE SPELL box (left) -->
-  <rect x="40" y="480" width="142" height="56" rx="4" fill="#6f42c1" stroke="#3c2363" stroke-width="1.5"/>
-  <polygon points="54,491 60,497 54,503 48,497" fill="#ffffff" stroke="#3c2363" stroke-width="0.8"/>
-  <text x="116" y="496" text-anchor="middle" class="act-title">DISABLE (slot)</text>
-  <text x="111" y="510" text-anchor="middle" class="act-detail">Tasha's: prone+incap (WIS13)</text>
-  <text x="111" y="522" text-anchor="middle" class="act-detail">Dissonant: 3d6+flee (WIS13)</text>
-  <text x="111" y="532" text-anchor="middle" class="act-note">30 / 60 ft</text>
-  <!-- D3b YES -> DISABLE (chip above) -->
-  <line x1="231" y1="508" x2="186" y2="508" stroke="#6f42c1" stroke-width="2.5"/>
-  <polygon points="182,508 190,504 190,512" fill="#6f42c1"/>
-  <rect x="192" y="492" width="26" height="13" rx="3" fill="#ffffff" stroke="#5a3a91" stroke-width="0.8"/>
-  <text x="205" y="501.5" text-anchor="middle" class="chip" fill="#5a3a91">YES</text>
-  <!-- D3b NO down (chip right) -->
-  <line x1="297" y1="532" x2="297" y2="560" stroke="#a04e08" stroke-width="2.5"/>
-  <polygon points="297,566 292,560 302,560" fill="#a04e08"/>
-  <rect x="303" y="538" width="26" height="13" rx="3" fill="#ffffff" stroke="#a04e08" stroke-width="0.8"/>
-  <text x="316" y="547.5" text-anchor="middle" class="chip" fill="#a04e08">NO</text>
-
-  <!-- VICIOUS MOCKERY box (default) -->
-  <rect x="225" y="566" width="150" height="50" rx="4" fill="#d9690a" stroke="#8a4205" stroke-width="1.5"/>
-  <circle cx="236" cy="580" r="4.5" fill="#ffffff" stroke="#8a4205" stroke-width="0.8"/>
-  <text x="308" y="583" text-anchor="middle" class="act-title">VICIOUS MOCKERY</text>
-  <text x="300" y="598" text-anchor="middle" class="act-detail">Cantrip, WIS 13, 1d6</text>
-  <text x="300" y="610" text-anchor="middle" class="act-detail">+ disadv on its next attack</text>
+  <!-- D3: light up a tough foe? cy432 -->
+  <polygon points="297,406 365,432 297,458 229,432" fill="#fff3cd" stroke="#856404" stroke-width="2"/>
+  <text x="297" y="428" text-anchor="middle" class="decision">Tough foe the</text>
+  <text x="297" y="441" text-anchor="middle" class="decision">party must hit?</text>
+  <!-- FAERIE FIRE box (left) -->
+  <rect x="40" y="404" width="142" height="56" rx="4" fill="#6f42c1" stroke="#3c2363" stroke-width="1.5"/>
+  <polygon points="54,415 60,421 54,427 48,421" fill="#ffffff" stroke="#3c2363" stroke-width="0.8"/>
+  <text x="116" y="420" text-anchor="middle" class="act-title">FAERIE FIRE</text>
+  <text x="111" y="435" text-anchor="middle" class="act-detail">DEX 13 or outlined</text>
+  <text x="111" y="447" text-anchor="middle" class="act-detail">Allies get ADV to hit it, 60ft</text>
+  <text x="111" y="457" text-anchor="middle" class="act-note">Concentration - huge force multiplier</text>
+  <!-- D3 YES -> FAERIE FIRE (chip above) -->
+  <line x1="229" y1="432" x2="186" y2="432" stroke="#6f42c1" stroke-width="2.5"/>
+  <polygon points="182,432 190,428 190,436" fill="#6f42c1"/>
+  <rect x="192" y="416" width="26" height="13" rx="3" fill="#ffffff" stroke="#5a3a91" stroke-width="0.8"/>
+  <text x="205" y="425.5" text-anchor="middle" class="chip" fill="#5a3a91">YES</text>
+  <!-- D3 NO down -> VICIOUS MOCKERY (chip right) -->
+  <line x1="297" y1="458" x2="297" y2="490" stroke="#d9690a" stroke-width="2.5"/>
+  <polygon points="297,496 292,490 302,490" fill="#d9690a"/>
+  <rect x="303" y="466" width="26" height="13" rx="3" fill="#ffffff" stroke="#a04e08" stroke-width="0.8"/>
+  <text x="316" y="475.5" text-anchor="middle" class="chip" fill="#a04e08">NO</text>
+  <!-- VICIOUS MOCKERY box (terminal) -->
+  <rect x="225" y="496" width="150" height="52" rx="4" fill="#d9690a" stroke="#8a4205" stroke-width="1.5"/>
+  <circle cx="236" cy="510" r="4.5" fill="#ffffff" stroke="#8a4205" stroke-width="0.8"/>
+  <text x="308" y="513" text-anchor="middle" class="act-title">VICIOUS MOCKERY</text>
+  <text x="300" y="528" text-anchor="middle" class="act-detail">Cantrip, WIS 13, 1d6 psychic</text>
+  <text x="300" y="540" text-anchor="middle" class="act-detail">+ disadv on its next attack</text>
 
   <!-- ===== BOTTOM UTILITY ROW ===== -->
   <rect x="15" y="700" width="135" height="100" rx="4" fill="#343a40" stroke="#15181c" stroke-width="1.5"/>
   <text x="82" y="716" text-anchor="middle" class="box-title">REACTION</text>
   <line x1="25" y1="722" x2="140" y2="722" stroke="#666" stroke-width="1.2"/>
   <text x="22" y="736" class="act-title">Opportunity Attack</text>
-  <text x="22" y="750" class="act-detail">Dagger +2, 1d4 only</text>
+  <text x="22" y="750" class="act-detail">Dagger +3, 1d4+1 only</text>
   <text x="22" y="762" class="act-detail">if a foe leaves reach.</text>
-  <text x="22" y="778" class="act-detail">You have no Shield -</text>
-  <text x="22" y="790" class="act-note">just don't get hit.</text>
+  <text x="22" y="778" class="act-detail">No Shield spell -</text>
+  <text x="22" y="790" class="act-note">at HP 7, just don't get hit.</text>
 
   <rect x="160" y="700" width="135" height="100" rx="4" fill="#6f42c1" stroke="#3c2363" stroke-width="1.5"/>
   <text x="227" y="716" text-anchor="middle" class="box-title">BONUS ACTION</text>
@@ -201,7 +183,7 @@
   <text x="372" y="716" text-anchor="middle" class="box-title">MOVEMENT</text>
   <line x1="315" y1="722" x2="430" y2="722" stroke="#0d6473" stroke-width="1.2"/>
   <text x="312" y="736" class="act-detail">Speed: 30 ft</text>
-  <text x="312" y="750" class="act-detail">AC 10 - stay 60ft+ back</text>
+  <text x="312" y="750" class="act-detail">HP 7 - stay 60ft+ back</text>
   <text x="312" y="762" class="act-detail">Kite: move, then cast.</text>
   <text x="312" y="776" class="act-detail">Use allies as a wall.</text>
   <text x="312" y="790" class="act-detail">Keep line of sight.</text>
@@ -209,16 +191,16 @@
   <rect x="450" y="700" width="130" height="100" rx="4" fill="#ffffff" stroke="#117a5f" stroke-width="1.5"/>
   <rect x="450" y="700" width="130" height="18" rx="4" fill="#20a07a"/>
   <text x="515" y="713" text-anchor="middle" class="box-title">UTILITY</text>
-  <text x="455" y="731" class="stat-label">Mage Hand</text><text x="520" y="731" class="stat-value">30ft</text>
-  <text x="455" y="745" class="stat-label">Darkvision</text><text x="520" y="745" class="stat-value">60ft</text>
-  <text x="455" y="759" class="stat-label">Adv save</text><text x="520" y="759" class="stat-value">vs Charmed</text>
-  <text x="455" y="773" class="stat-label">Immune</text><text x="520" y="773" class="stat-value">magic sleep</text>
-  <text x="455" y="790" class="key-sub">Skills: Persuasion +7, History +5</text>
+  <text x="455" y="731" class="stat-label">Minor Illus.</text><text x="519" y="731" class="stat-value">30ft</text>
+  <text x="455" y="745" class="stat-label">Shortbow</text><text x="519" y="745" class="stat-value">+3 1d6+1</text>
+  <text x="455" y="759" class="stat-label">Darkvision</text><text x="519" y="759" class="stat-value">60ft</text>
+  <text x="455" y="773" class="stat-label">Adv save</text><text x="519" y="773" class="stat-value">vs Charm</text>
+  <text x="455" y="790" class="key-sub">Persuasion / Deception +5</text>
 
   <!-- FOOTER -->
   <rect x="15" y="806" width="565" height="30" rx="4" fill="#fff3cd" stroke="#856404" stroke-width="1.5"/>
   <polygon points="27,812 21,822 33,822" fill="#d9690a" stroke="#5a4500" stroke-width="0.8"/>
   <text x="27" y="820.5" text-anchor="middle" class="bang" fill="#ffffff">!</text>
-  <text x="302" y="820" text-anchor="middle" class="foot" fill="#5a4500">Vicious Mockery imposes DISADVANTAGE on its next attack. Fragile (HP 13, AC 10) - stay back, buff, control.</text>
-  <text x="302" y="832" text-anchor="middle" class="stat-value" fill="#5a4500" style="font-size:8px">Synced: 2026-06-01  -  Lv2  -  regenerate from D&amp;D Beyond after level-ups</text>
+  <text x="302" y="820" text-anchor="middle" class="foot" fill="#5a4500">Vicious Mockery imposes DISADVANTAGE on its next attack. EXTREMELY fragile (HP 7) - stay back, buff, heal.</text>
+  <text x="302" y="832" text-anchor="middle" class="stat-value" fill="#5a4500" style="font-size:8px">Synced: 2026-06-01  -  Lv1  -  regenerate from D&amp;D Beyond after level-ups</text>
 </svg>
