@@ -110,10 +110,10 @@
   <!-- GREATAXE+CLEAVE (left) -->
   <rect x="55" y="292" width="129" height="56" rx="4" fill="#1e7e34" stroke="#0f3d19" stroke-width="1.5"/>
   <circle cx="68" cy="305" r="4.5" fill="#ffffff" stroke="#0f3d19" stroke-width="0.8"/>
-  <text x="124" y="308" text-anchor="middle" class="act-title">GREATAXE + CLEAVE</text>
-  <text x="119" y="323" text-anchor="middle" class="act-detail">+4, 1d12+4 slashing</text>
-  <text x="119" y="335" text-anchor="middle" class="act-detail">Cleave: also hit a 2nd</text>
-  <text x="119" y="345" text-anchor="middle" class="act-note">foe in 5ft (1d12, no bonus)</text>
+  <text x="124" y="308" text-anchor="middle" class="act-title">CLEAVE</text>
+  <text x="119" y="323" text-anchor="middle" class="act-detail">Greataxe +4, 1d12+4</text>
+  <text x="119" y="335" text-anchor="middle" class="act-detail">also hits a 2nd foe</text>
+  <text x="119" y="345" text-anchor="middle" class="act-note">in 5ft (1d12, no bonus)</text>
   <!-- D2 YES -> CLEAVE (chip above) -->
   <line x1="229" y1="320" x2="188" y2="320" stroke="#1e7e34" stroke-width="2.5"/>
   <polygon points="184,320 192,316 192,324" fill="#1e7e34"/>
@@ -147,7 +147,7 @@
   <!-- MOVE+ATTACK (far right) -->
   <rect x="500" y="450" width="80" height="64" rx="4" fill="#138496" stroke="#0a4a52" stroke-width="1.5"/>
   <circle cx="515" cy="463" r="4.5" fill="#ffffff" stroke="#0a4a52" stroke-width="0.8"/>
-  <text x="544" y="466" text-anchor="middle" class="act-title">MOVE+ATK</text>
+  <text x="548" y="466" text-anchor="middle" class="act-title">MOVE IN</text>
   <text x="540" y="481" text-anchor="middle" class="act-detail">Close the gap,</text>
   <text x="540" y="493" text-anchor="middle" class="act-detail">then Greataxe</text>
   <text x="540" y="505" text-anchor="middle" class="act-detail">or Handaxe</text>
@@ -160,7 +160,7 @@
   <!-- THROW HANDAXE (right, below D5) -->
   <rect x="405" y="450" width="86" height="64" rx="4" fill="#d9690a" stroke="#8a4205" stroke-width="1.5"/>
   <circle cx="418" cy="463" r="4.5" fill="#ffffff" stroke="#8a4205" stroke-width="0.8"/>
-  <text x="452" y="466" text-anchor="middle" class="act-title">THROW AXE</text>
+  <text x="452" y="466" text-anchor="middle" class="act-title">THROW</text>
   <text x="448" y="481" text-anchor="middle" class="act-detail">Handaxe +4</text>
   <text x="448" y="493" text-anchor="middle" class="act-detail">1d6+4 thrown</text>
   <text x="448" y="505" text-anchor="middle" class="act-detail">20 / 60 ft</text>
@@ -237,9 +237,9 @@
   <text x="455" y="794" class="stat-value">- Adv vs Charmed</text>
 
   <!-- FOOTER -->
-  <rect x="15" y="806" width="565" height="30" rx="4" fill="#fff3cd" stroke="#856404" stroke-width="1.5"/>
-  <polygon points="27,812 21,822 33,822" fill="#d9690a" stroke="#5a4500" stroke-width="0.8"/>
-  <text x="27" y="820.5" text-anchor="middle" class="bang" fill="#ffffff">!</text>
-  <text x="302" y="820" text-anchor="middle" class="foot" fill="#5a4500">Rage ends if you don't attack or take damage. Reckless = adv on your STR melee (foes get adv vs you).</text>
-  <text x="302" y="832" text-anchor="middle" class="stat-value" fill="#5a4500" style="font-size:8px">Synced: 2026-06-01  -  Lv2  -  regenerate from D&amp;D Beyond after level-ups</text>
+  <rect x="15" y="801" width="565" height="21" rx="4" fill="#fff3cd" stroke="#856404" stroke-width="1.5"/>
+  <polygon points="27,805 21,814 33,814" fill="#d9690a" stroke="#5a4500" stroke-width="0.8"/>
+  <text x="27" y="813" text-anchor="middle" class="bang" fill="#ffffff">!</text>
+  <text x="302" y="811" text-anchor="middle" class="foot" fill="#5a4500">Rage ends if you don't attack or take damage. Reckless = adv on your STR melee (foes get adv vs you).</text>
+  <text x="302" y="819" text-anchor="middle" class="stat-value" fill="#5a4500" style="font-size:8px">Synced: 2026-06-01  -  Lv2  -  regenerate from D&amp;D Beyond after level-ups</text>
 </svg>

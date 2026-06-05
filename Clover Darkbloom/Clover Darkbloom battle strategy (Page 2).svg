@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">
+  <!-- Clover Wild Shape - BACK PAGE. Beast stats from D&D Beyond (2024 where they differ). -->
+  <style>
+    .title    { font: bold 17px Arial, sans-serif; fill: #ffffff; }
+    .subtitle { font: bold 10px Arial, sans-serif; fill: #ececf5; }
+    .card-h   { font: bold 12px Arial, sans-serif; fill: #ffffff; }
+    .card-stat{ font: bold 10px Arial, sans-serif; fill: #111111; }
+    .card-body{ font: 10px Arial, sans-serif;      fill: #1a1a2e; }
+    .card-use { font: bold 9px Arial, sans-serif;  fill: #6d2fa0; }
+  </style>
+
+  <rect width="595" height="842" fill="#ffffff"/>
+
+  <!-- HEADER -->
+  <rect x="15" y="10" width="565" height="46" rx="6" fill="#1a1a2e"/>
+  <text x="297" y="32" text-anchor="middle" class="title">CLOVER - WILD SHAPE FORMS  (back)</text>
+  <text x="297" y="48" text-anchor="middle" class="subtitle">Level 2 Druid  |  CR 1/4 max, no flying forms yet  |  Bonus Action to change, 2 / long rest  |  Synced 2026-06-01</text>
+
+  <!-- ===== ROW 1 ===== -->
+  <!-- BASICS -->
+  <rect x="15" y="62" width="280" height="180" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="15" y="62" width="280" height="20" rx="4" fill="#343a40"/>
+  <text x="155" y="76" text-anchor="middle" class="card-h">WILD SHAPE - HOW IT WORKS</text>
+  <text x="27" y="102" class="card-body">- Bonus Action to transform; 2 / long rest</text>
+  <text x="27" y="118" class="card-body">- You take the beast's AC, HP, Speed &amp; attacks</text>
+  <text x="27" y="134" class="card-body">- Keep your INT/WIS/CHA, saves, skills, mind</text>
+  <text x="27" y="150" class="card-body">- You can't cast spells (Concentration holds)</text>
+  <text x="27" y="166" class="card-body">- Revert: Bonus Action, at 0 HP, or if knocked out</text>
+  <text x="27" y="182" class="card-body">- Excess damage past the beast's HP hits you</text>
+  <text x="27" y="198" class="card-body">- Lasts about 1 hour at level 2</text>
+  <text x="27" y="223" class="card-use">Beast HP is a shield - drop the form before it hits 0.</text>
+
+  <!-- WOLF -->
+  <rect x="300" y="62" width="280" height="180" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="300" y="62" width="280" height="20" rx="4" fill="#1e7e34"/>
+  <text x="440" y="76" text-anchor="middle" class="card-h">WOLF</text>
+  <text x="312" y="100" class="card-stat">AC 12  |  HP 11  |  Speed 40 ft</text>
+  <line x1="312" y1="106" x2="568" y2="106" stroke="#ccc" stroke-width="1"/>
+  <text x="312" y="122" class="card-body">- Bite +4, 1d6+2 piercing</text>
+  <text x="312" y="138" class="card-body">- A Medium or smaller target is knocked Prone</text>
+  <text x="312" y="154" class="card-body">- Pack Tactics: advantage when an ally is</text>
+  <text x="322" y="168" class="card-body">within 5 ft of your target</text>
+  <text x="312" y="223" class="card-use">Use for: reliable knockdowns + advantage</text>
+
+  <!-- ===== ROW 2 ===== -->
+  <!-- PANTHER -->
+  <rect x="15" y="248" width="280" height="180" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="15" y="248" width="280" height="20" rx="4" fill="#138496"/>
+  <text x="155" y="262" text-anchor="middle" class="card-h">PANTHER</text>
+  <text x="27" y="286" class="card-stat">AC 12  |  HP 13  |  Speed 50 ft, climb 40</text>
+  <line x1="27" y1="292" x2="283" y2="292" stroke="#ccc" stroke-width="1"/>
+  <text x="27" y="308" class="card-body">- Bite +4 (1d6+2) or Claw +4 (1d4+2)</text>
+  <text x="27" y="324" class="card-body">- Pounce: move 20ft + claw hit -&gt; DC 12 STR</text>
+  <text x="37" y="338" class="card-body">or Prone, then Bite as a BONUS action</text>
+  <text x="27" y="354" class="card-body">- Stealth +6</text>
+  <text x="27" y="409" class="card-use">Use for: speed, ambush, a first-round knockdown</text>
+
+  <!-- GIANT WOLF SPIDER -->
+  <rect x="300" y="248" width="280" height="180" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="300" y="248" width="280" height="20" rx="4" fill="#6f42c1"/>
+  <text x="440" y="262" text-anchor="middle" class="card-h">GIANT WOLF SPIDER</text>
+  <text x="312" y="286" class="card-stat">AC 13  |  HP 11  |  Speed 40 ft, climb 40</text>
+  <line x1="312" y1="292" x2="568" y2="292" stroke="#ccc" stroke-width="1"/>
+  <text x="312" y="308" class="card-body">- Bite +5, 1d4+3 piercing + 2d4 poison</text>
+  <text x="312" y="324" class="card-body">- Spider Climb: walls and ceilings, no check</text>
+  <text x="312" y="340" class="card-body">- Blindsight 10 ft, Stealth +7</text>
+  <text x="312" y="409" class="card-use">Use for: best AC, extra poison damage, climbing</text>
+
+  <!-- ===== ROW 3 ===== -->
+  <!-- BOAR -->
+  <rect x="15" y="434" width="280" height="180" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="15" y="434" width="280" height="20" rx="4" fill="#d9690a"/>
+  <text x="155" y="448" text-anchor="middle" class="card-h">BOAR</text>
+  <text x="27" y="472" class="card-stat">AC 11  |  HP 13  |  Speed 40 ft</text>
+  <line x1="27" y1="478" x2="283" y2="478" stroke="#ccc" stroke-width="1"/>
+  <text x="27" y="494" class="card-body">- Tusk +3, 1d6+1 slashing</text>
+  <text x="27" y="510" class="card-body">- Charge: move 20ft straight -&gt; +1d6 and</text>
+  <text x="37" y="524" class="card-body">DC 11 STR or knocked Prone</text>
+  <text x="27" y="540" class="card-body">- Bloodied Fury: advantage while below half HP</text>
+  <text x="27" y="595" class="card-use">Use for: a durable charging knockdown</text>
+
+  <!-- GIANT BADGER -->
+  <rect x="300" y="434" width="280" height="180" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="300" y="434" width="280" height="20" rx="4" fill="#6d4c2f"/>
+  <text x="440" y="448" text-anchor="middle" class="card-h">GIANT BADGER</text>
+  <text x="312" y="472" class="card-stat">AC 10  |  HP 13  |  Speed 30 ft, burrow 10</text>
+  <line x1="312" y1="478" x2="568" y2="478" stroke="#ccc" stroke-width="1"/>
+  <text x="312" y="494" class="card-body">- Multiattack: Bite +3 (1d6+1) AND</text>
+  <text x="322" y="508" class="card-body">Claws +3 (2d4+1)</text>
+  <text x="312" y="524" class="card-body">- Keen Smell; burrow 10 ft to scout/escape</text>
+  <text x="312" y="595" class="card-use">Use for: two attacks every turn</text>
+
+  <!-- ===== ROW 4 ===== -->
+  <!-- GIANT FROG -->
+  <rect x="15" y="620" width="280" height="180" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="15" y="620" width="280" height="20" rx="4" fill="#0069d9"/>
+  <text x="155" y="634" text-anchor="middle" class="card-h">GIANT FROG</text>
+  <text x="27" y="658" class="card-stat">AC 11  |  HP 18  |  Speed 30 ft, swim 30</text>
+  <line x1="27" y1="664" x2="283" y2="664" stroke="#ccc" stroke-width="1"/>
+  <text x="27" y="680" class="card-body">- Bite +3, 1d6+1; a Medium or smaller foe is</text>
+  <text x="37" y="694" class="card-body">Grappled + Restrained (escape DC 11)</text>
+  <text x="27" y="710" class="card-body">- Swallow a Small grappled foe (2d4 acid/turn)</text>
+  <text x="27" y="726" class="card-body">- Amphibious, Standing Leap</text>
+  <text x="27" y="781" class="card-use">Use for: highest HP tank; lock down one foe</text>
+
+  <!-- RIDING HORSE -->
+  <rect x="300" y="620" width="280" height="180" rx="4" fill="#ffffff" stroke="#555" stroke-width="1.5"/>
+  <rect x="300" y="620" width="280" height="20" rx="4" fill="#495057"/>
+  <text x="440" y="634" text-anchor="middle" class="card-h">RIDING HORSE</text>
+  <text x="312" y="658" class="card-stat">AC 11  |  HP 13  |  Speed 60 ft</text>
+  <line x1="312" y1="664" x2="568" y2="664" stroke="#ccc" stroke-width="1"/>
+  <text x="312" y="680" class="card-body">- Hooves +5, 1d8+3 bludgeoning</text>
+  <text x="312" y="696" class="card-body">- Fastest form: escape, reposition, or</text>
+  <text x="322" y="710" class="card-body">carry an ally out of danger</text>
+  <text x="312" y="781" class="card-use">Use for: speed and a solid single hit</text>
+</svg>

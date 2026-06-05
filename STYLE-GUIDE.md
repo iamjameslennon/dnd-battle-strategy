@@ -4,14 +4,25 @@ Rules for every character battle-strategy sheet. Goal: a single-page A4 combat
 flowchart that is **easy to read in low light on printed paper**, and that prints
 without manual scaling. Start every new sheet from `_template.svg`.
 
+## File naming
+
+- Each page is its own SVG: `<Character> battle strategy (Page N).svg` — full character
+  name in title case, then `(Page 1)`, `(Page 2)`, etc. Most sheets are just `(Page 1)`.
+- The printable PDF is `<Character> battle strategy.pdf` (no page suffix). For multi-page
+  characters it contains all pages in order, merged with `cairosvg` + `pypdf`, ready to
+  print double-sided.
+- Files live in a folder named after the character (e.g. `Clover Darkbloom/`).
+
 ## Canvas & output
 
 - **viewBox `0 0 595 842`**, `width="595" height="842"`. This is A4 at 72 dpi
   (595 × 842 pt), so the exported PDF is true A4 with no scaling.
 - White background (`#ffffff`). **Do not use a dark theme** — it burns printer ink.
   Low-light legibility comes from contrast, size, and weight, not a dark page.
-- Keep all content inside ~15px margins (≈ x 15–580, y 10–836). Printing is done
-  manually, but stay clear of the edges so nothing clips.
+- **Print-safe area: keep all content within y 10–822** (and x 15–580). Real A4
+  printers can't print the outer ~5–6mm (~14–18pt), so anything below ~y822 gets
+  clipped. The footer block sits at y801–822 with the Synced line baseline at y819 —
+  do not push it lower. Leave the same clearance at the other three edges.
 - Export: SVG is the source of truth. PDF via `cairosvg ... dpi=72` (gives 595×842 pt).
   Regenerate the PDF only when asked; otherwise the SVG is the live file.
 
@@ -23,6 +34,11 @@ without manual scaling. Start every new sheet from `_template.svg`.
   the START node bold 12px; header title bold 17px.
 - **Ink is near-black** (`#111111` / `#1a1a2e`). Use grey (`#555`) only for genuinely
   secondary sub-text (e.g. legend examples). No light-grey body text.
+- **An inline icon needs its title to clear it.** The action-box shape icon sits at
+  the left; the centred title must not reach it. Keep titles short (≈≤14 chars in a
+  ~130px box, fewer in narrower boxes) and push the descriptive detail into the body
+  lines — e.g. title "CLEAVE", not "GREATAXE + CLEAVE". If a title can't shrink, move
+  the icon to the far-left edge and shift the title centre right.
 - **Keep every string inside its box.** Text has no wrapping, so size it to fit:
   trim or abbreviate rather than overflow. In two-column rows (label + value), start
   the value column far enough left that the *longest* value still ends ~8px inside the
